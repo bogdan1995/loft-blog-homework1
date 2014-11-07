@@ -1,65 +1,353 @@
-/*
-Error: File to import not found or unreadable: layouts/queries.
-       Load paths:
-         Compass::SpriteImporter
-         S:/home/localhost/www/portfolio-2/proj/sass
-         C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets
-        on line 4 of S:/home/localhost/www/portfolio-2/proj/sass/style.scss
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-1: @import "compass/reset";
-2: @import "layouts/header";
-3: @import "layouts/container";
-4: @import "layouts/queries";
-5: 
-6: body {
-7: 	background: url(../img/background.png);
-8: 	font-family: "Fira Sans", 'Arial';
-9: }
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-Backtrace:
-S:/home/localhost/www/portfolio-2/proj/sass/style.scss:4
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:268:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.7.11/lib/listen/listener.rb:282:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.7.11/lib/listen/listener.rb:282:in `_process_changes'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.7.11/lib/listen/listener.rb:239:in `block in _wait_for_changes'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.7.11/lib/listen/listener.rb:222:in `loop'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.7.11/lib/listen/listener.rb:222:in `_wait_for_changes'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.7.11/lib/listen/listener.rb:318:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: layouts/queries.\A        Load paths:\A          Compass::SpriteImporter\A          S:/home/localhost/www/portfolio-2/proj/sass\A          C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets\A         on line 4 of S:/home/localhost/www/portfolio-2/proj/sass/style.scss\A \A 1: @import \"compass/reset\";\A 2: @import \"layouts/header\";\A 3: @import \"layouts/container\";\A 4: @import \"layouts/queries\";\A 5: \A 6: body {\A 7: 	background: url(../img/background.png);\A 8: 	font-family: \"Fira Sans\", 'Arial';\A 9: }"; }
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/layouts/_header.scss */
+.header, .footer {
+  position: relative;
+  width: 100%;
+  background: #eff3f7;
+  overflow: hidden;
+}
+/* line 6, ../sass/layouts/_header.scss */
+.header:before, .footer:before {
+  content: '';
+  display: block;
+  background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  position: absolute;
+  height: 3px;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* line 17, ../sass/layouts/_header.scss */
+.inner-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* line 23, ../sass/layouts/_header.scss */
+.header-name {
+  float: left;
+  display: inline-block;
+}
+/* line 26, ../sass/layouts/_header.scss */
+.header-name h1 {
+  color: #6F727E;
+  font-family: "HelveticaNeueCyr";
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0 0 7px 0;
+  border-bottom: 1px solid #6F727E;
+}
+/* line 34, ../sass/layouts/_header.scss */
+.header-name p {
+  color: #6F727E;
+  font-family: "HelveticaNeueCyr";
+  font-size: 13px;
+  font-weight: 100;
+  padding: 6px 0 0 0;
+}
+
+/* line 43, ../sass/layouts/_header.scss */
+.header-links {
+  margin: 4px 0 0 946px;
+}
+/* line 45, ../sass/layouts/_header.scss */
+.header-links .header-items {
+  display: inline-block;
+  margin-right: 18px;
+}
+/* line 48, ../sass/layouts/_header.scss */
+.header-links .header-items:last-child {
+  margin-right: 0;
+}
+/* line 51, ../sass/layouts/_header.scss */
+.header-links .header-items a {
+  background: url(../img/sprites.png);
+}
+/* line 56, ../sass/layouts/_header.scss */
+.header-links .vk a {
+  background-position: 0 0;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+}
+/* line 61, ../sass/layouts/_header.scss */
+.header-links .vk a:hover {
+  background-position: 0 -50px;
+}
+/* line 67, ../sass/layouts/_header.scss */
+.header-links .tw a {
+  background-position: -50px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+/* line 72, ../sass/layouts/_header.scss */
+.header-links .tw a:hover {
+  background-position: -50px -50px;
+}
+/* line 79, ../sass/layouts/_header.scss */
+.header-links .fb a {
+  background-position: -100px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+/* line 84, ../sass/layouts/_header.scss */
+.header-links .fb a:hover {
+  background-position: -100px -50px;
+}
+/* line 90, ../sass/layouts/_header.scss */
+.header-links .gh a {
+  background-position: -150px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+/* line 95, ../sass/layouts/_header.scss */
+.header-links .gh a:hover {
+  background-position: -150px -50px;
+}
+
+/* line 104, ../sass/layouts/_header.scss */
+.footer:before {
+  content: '';
+  display: block;
+  background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  position: absolute;
+  height: 3px;
+  top: 0px;
+  width: 100%;
+}
+/* line 113, ../sass/layouts/_header.scss */
+.footer p {
+  color: #4A545D;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px 0 37px 0;
+}
+
+/* line 1, ../sass/layouts/_left-column.scss */
+.left-column {
+  width: 258px;
+  float: left;
+}
+
+/* line 6, ../sass/layouts/_left-column.scss */
+.sidebar {
+  border-radius: 4px;
+  background-color: #EFF3F7;
+}
+/* line 10, ../sass/layouts/_left-column.scss */
+.sidebar .sidebar-items a {
+  display: block;
+  padding: 27px 0 28px 28px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 2px solid #3BA8C0;
+}
+/* line 16, ../sass/layouts/_left-column.scss */
+.sidebar .sidebar-items a:hover {
+  color: #3BA8C0;
+}
+/* line 20, ../sass/layouts/_left-column.scss */
+.sidebar .sidebar-items.active a {
+  padding: 24px 0 25px 28px;
+  color: #F9FAFB;
+  font-size: 22px;
+  background-color: #3BA8C0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 28, ../sass/layouts/_left-column.scss */
+.sidebar .sidebar-items:last-child a {
+  border-bottom: 2px solid transparent;
+}
+
+/* line 36, ../sass/layouts/_left-column.scss */
+.contacts {
+  margin-top: 23px;
+}
+/* line 39, ../sass/layouts/_left-column.scss */
+.contacts .contacts-name {
+  padding: 10px 0 10px 19px;
+  background-color: #3BA8C0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 44, ../sass/layouts/_left-column.scss */
+.contacts .contacts-name p {
+  color: #FBFCFD;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* line 50, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items {
+  color: #EDEDED;
+  font-size: 16px;
+  font-weight: 300;
+}
+/* line 54, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:nth-child(1) {
+  position: relative;
+  padding: 11px 0 12px 83px;
+  background: #41b9d4;
+}
+/* line 58, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:nth-child(1):before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 42px;
+  background: url(../img/sprites.png) 0 -100px;
+  width: 21px;
+  height: 16px;
+}
+/* line 69, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:nth-child(2) {
+  position: relative;
+  padding: 10px 0 11px 83px;
+  background: #48cbe8;
+}
+/* line 73, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:nth-child(2):before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 42px;
+  background: url(../img/sprites.png) -25px -100px;
+  width: 19px;
+  height: 21px;
+}
+/* line 83, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:last-child {
+  position: relative;
+  padding: 8px 0 13px 83px;
+  background: #51daf8;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 89, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:last-child:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 39px;
+  background: url(../img/sprites.png) 0 -120px;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 1, ../sass/layouts/_right-column.scss */
+.right-column {
+  width: 648px;
+  padding-left: 53px;
+  overflow: hidden;
+}
+
+/* line 7, ../sass/layouts/_right-column.scss */
+.information {
+  background-color: #EFF3F7;
+  border-radius: 4px;
+}
+/* line 11, ../sass/layouts/_right-column.scss */
+.information .information-name {
+  color: #3BA8C0;
+  font-size: 27px;
+  font-weight: 300;
+  padding: 20px 0 20px 24px;
+  border-bottom: 2px solid #3BA8C0;
+  width: 342px;
+}
+/* line 19, ../sass/layouts/_right-column.scss */
+.information .main-information {
+  margin-top: 24px;
+}
+
+/* line 25, ../sass/layouts/_right-column.scss */
+.main-information .avatar {
+  border-radius: 50%;
+  border: 7px solid #30a6bd;
+}
+/* line 28, ../sass/layouts/_right-column.scss */
+.main-information .avatar img {
+  max-width: 100%;
+}
+
+/* line 4, ../sass/layouts/_container.scss */
+.container {
+  width: 960px;
+  margin: 39px auto 38px auto;
+  overflow: hidden;
+}
+
+/* line 5, ../sass/style.scss */
+body {
+  background: url(../img/background.png);
+  font-family: "Fira Sans", 'Arial';
+}
