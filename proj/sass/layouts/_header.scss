@@ -2,7 +2,6 @@
 	position: relative;
 	width: 100%;
 	background: #eff3f7;
-	overflow: hidden;
 	&:before {
 		content: '';
 		display: block;
@@ -20,7 +19,8 @@
 	padding: 32px 0;
 }
 
-.header-name {
+.header-name {	
+	float: left;
 	display: inline-block;
 	h1 {
 		color: #6F727E;
@@ -40,8 +40,7 @@
 }
 
 .header-links {
-	float: right;
-	margin: 4px 0 0 0;
+	margin: 4px 0 0 946px;
 	.header-items {
 		display: inline-block;
 		margin-right: 18px;
@@ -112,7 +111,6 @@
 	}
 	p {
 		color: #4A545D;
-		font-family: "Fira Sans";
 		font-size: 13px;
 		font-weight: 300;
 		text-align: center;
