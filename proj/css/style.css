@@ -329,14 +329,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 24px;
 }
 
-/* line 25, ../sass/layouts/_right-column.scss */
+/* line 24, ../sass/layouts/_right-column.scss */
+.main-information {
+  overflow: hidden;
+}
+/* line 26, ../sass/layouts/_right-column.scss */
 .main-information .avatar {
+  margin: 0 32px 31px 40px;
+  float: left;
   border-radius: 50%;
   border: 7px solid #30a6bd;
+  width: 201px;
+  height: 200px;
 }
-/* line 28, ../sass/layouts/_right-column.scss */
+/* line 33, ../sass/layouts/_right-column.scss */
 .main-information .avatar img {
   max-width: 100%;
+  border-radius: 50%;
+}
+/* line 38, ../sass/layouts/_right-column.scss */
+.main-information .about {
+  margin-top: 7px;
+}
+/* line 40, ../sass/layouts/_right-column.scss */
+.main-information .about .about-items {
+  margin-bottom: 28px;
+  color: #37424D;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* line 45, ../sass/layouts/_right-column.scss */
+.main-information .about .about-items:nth-child(2) {
+  color: #5A636B;
+}
+/* line 48, ../sass/layouts/_right-column.scss */
+.main-information .about .about-items:nth-child(3), .main-information .about .about-items:nth-child(4) {
+  color: #4A545D;
+}
+/* line 51, ../sass/layouts/_right-column.scss */
+.main-information .about .about-items:nth-child(5) strong {
+  color: #5A636B;
+}
+/* line 58, ../sass/layouts/_right-column.scss */
+.main-information .about .about-items strong {
+  color: #4A545D;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 72, ../sass/layouts/_right-column.scss */
+.job {
+  margin-top: 19px;
+  background-color: #EFF3F7;
+  border-radius: 4px;
+}
+/* line 77, ../sass/layouts/_right-column.scss */
+.job .job-name {
+  color: #3BA8C0;
+  font-size: 27px;
+  font-weight: 300;
+  padding: 21px 0 25px 24px;
+  border-bottom: 2px solid #3BA8C0;
+  width: 225px;
 }
 
 /* line 4, ../sass/layouts/_container.scss */
