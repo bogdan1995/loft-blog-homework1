@@ -78,8 +78,40 @@
 		color: #3BA8C0;
 		font-size: 27px;
 		font-weight: 300;
-		padding: 21px 0 25px 24px;
+		padding: 18px 0 21px 24px;
 		border-bottom: 2px solid #3BA8C0;
 		width: 225px;
+	}
+	.job-list {
+		padding: 35px 0 36px 130px;
+		.job-items {
+			margin-bottom: 31px;
+			position: relative;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: -50px;
+				content: '';
+				background: url(../img/sprites.png) -50px -100px;
+				width: 32px;
+				height: 30px;
+			}
+			p {
+				margin-bottom: 8px;
+				color: #5A636B;
+				font-size: 16px;
+				font-weight: 300;
+			}
+			.job-inner {
+				color: #5A636B;
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 1;
+				margin-bottom: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
