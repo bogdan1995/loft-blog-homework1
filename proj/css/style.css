@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +61,174 @@ a img {
 /* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 1, ../sass/layouts/_header.scss */
+.header, .footer {
+  position: relative;
+  width: 100%;
+  background: #eff3f7;
+  overflow: hidden;
+}
+/* line 6, ../sass/layouts/_header.scss */
+.header:before, .footer:before {
+  content: '';
+  display: block;
+  background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  position: absolute;
+  height: 3px;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* line 17, ../sass/layouts/_header.scss */
+.inner-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* line 23, ../sass/layouts/_header.scss */
+.header-name {
+  display: inline-block;
+}
+/* line 25, ../sass/layouts/_header.scss */
+.header-name h1 {
+  color: #6F727E;
+  font-family: "HelveticaNeueCyr";
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0 0 7px 0;
+  border-bottom: 1px solid #6F727E;
+}
+/* line 33, ../sass/layouts/_header.scss */
+.header-name p {
+  color: #6F727E;
+  font-family: "HelveticaNeueCyr";
+  font-size: 13px;
+  font-weight: 100;
+  padding: 6px 0 0 0;
+}
+
+/* line 42, ../sass/layouts/_header.scss */
+.header-links {
+  float: right;
+  margin: 4px 0 0 0;
+}
+/* line 45, ../sass/layouts/_header.scss */
+.header-links .header-items {
+  display: inline-block;
+  margin-right: 18px;
+}
+/* line 48, ../sass/layouts/_header.scss */
+.header-links .header-items:last-child {
+  margin-right: 0;
+}
+/* line 51, ../sass/layouts/_header.scss */
+.header-links .header-items a {
+  background: url(../img/sprites.png);
+}
+/* line 56, ../sass/layouts/_header.scss */
+.header-links .vk a {
+  background-position: 0 0;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+}
+/* line 61, ../sass/layouts/_header.scss */
+.header-links .vk a:hover {
+  background-position: 0 -50px;
+}
+/* line 67, ../sass/layouts/_header.scss */
+.header-links .tw a {
+  background-position: -50px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+/* line 72, ../sass/layouts/_header.scss */
+.header-links .tw a:hover {
+  background-position: -50px -50px;
+}
+/* line 79, ../sass/layouts/_header.scss */
+.header-links .fb a {
+  background-position: -100px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+/* line 84, ../sass/layouts/_header.scss */
+.header-links .fb a:hover {
+  background-position: -100px -50px;
+}
+/* line 90, ../sass/layouts/_header.scss */
+.header-links .gh a {
+  background-position: -150px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+/* line 95, ../sass/layouts/_header.scss */
+.header-links .gh a:hover {
+  background-position: -150px -50px;
+}
+
+/* line 104, ../sass/layouts/_header.scss */
+.footer:before {
+  content: '';
+  display: block;
+  background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  position: absolute;
+  height: 3px;
+  top: 0px;
+  width: 100%;
+}
+/* line 113, ../sass/layouts/_header.scss */
+.footer p {
+  color: #4A545D;
+  font-family: "Fira Sans";
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px 0 37px 0;
+}
+
+/* line 1, ../sass/layouts/_left-column.scss */
+.left-column {
+  width: 258px;
+  border: 1px solid black;
+  float: left;
+}
+
+/* line 11, ../sass/layouts/_left-column.scss */
+.contacts {
+  margin-top: 23px;
+}
+
+/* line 1, ../sass/layouts/_right-column.scss */
+.right-column {
+  width: 648px;
+  margin-left: 53px;
+  border: 1px solid black;
+  float: left;
+}
+
+/* line 8, ../sass/layouts/_right-column.scss */
+.information {
+  height: 324px;
+  border: 1px solid black;
+}
+
+/* line 13, ../sass/layouts/_right-column.scss */
+.job, .education {
+  height: 242px;
+  border: 1px solid black;
+}
+
+/* line 4, ../sass/layouts/_container.scss */
+.container {
+  width: 960px;
+  border: 1px solid black;
+  margin: 39px auto 38px auto;
+  overflow: hidden;
 }
