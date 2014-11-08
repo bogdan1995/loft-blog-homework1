@@ -15,13 +15,11 @@
 }
 
 .inner-header {
-	width: 1200px;
 	margin:  0 auto;
 	padding: 32px 0;
 }
 
-.header-name {	
-	float: left;
+.header-name {
 	display: inline-block;
 	h1 {
 		color: #6F727E;
@@ -41,7 +39,9 @@
 }
 
 .header-links {
-	margin: 4px 0 0 946px;
+	display: inline-block;
+	float: right;
+	margin-top: 4px;
 	.header-items {
 		display: inline-block;
 		margin-right: 18px;

@@ -5,7 +5,6 @@
 }
 
 .information {
-	// height: 324px;
 	background-color: #EFF3F7;
 	border-radius: 4px;
 	.information-name {
@@ -36,6 +35,7 @@
 		}
 	}
 	.about {
+		overflow: hidden;
 		margin-top: 7px;
 		.about-items{
 			margin-bottom: 28px;
@@ -49,10 +49,106 @@
 				color: #4A545D;
 			}
 			&:nth-child(5) strong {
+				float: left;
+				display: block;
 				color: #5A636B;
 			}
 			&:nth-child(5) {
-				
+				.skills {
+					display: block;
+					overflow: hidden;
+					padding-left: 7px;
+				}
+				.skills li {					
+					display: inline-block;					
+					border-radius: 3px;
+					overflow: hidden;
+				}
+				li {
+					background-color: #3BA8C0;
+					margin-right: 8px;
+					&#gulp {
+						padding: 2px 8px;
+						position: relative;
+						&:before {
+							content: '';
+							display: block;
+							width: 40px;
+							height: 10px;
+							background-color: rgba(30, 103, 123, 0.43);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}
+					}
+					&#html {
+						padding: 2px 7px;
+						margin-bottom: 5px;
+						position: relative;
+						&:before {
+							content: '';
+							display: block;
+							width: 38px;
+							height: 10px;
+							background-color: rgba(30, 103, 123, 0.43);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}
+					}
+					&#css {
+						padding: 2px 11px;						
+						margin-bottom: 5px;
+						position: relative;
+						&:before {
+							content: '';
+							display: block;
+							width: 39px;
+							height: 10px;
+							background-color: rgba(30, 103, 123, 0.43);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}
+					}
+					&#js {
+						padding: 2px 11px;						
+						margin-bottom: 5px;
+						position: relative;
+						&:before {
+							content: '';
+							display: block;
+							width: 74px;
+							height: 10px;
+							background-color: rgba(30, 103, 123, 0.43);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}
+					}
+					&#git {
+						padding: 2px 12px 2px 13px;
+						position: relative;
+						&:before {
+							content: '';
+							display: block;
+							width: 39px;
+							height: 10px;
+							background-color: rgba(30, 103, 123, 0.43);
+							position: absolute;
+							bottom: 0;
+							left: 0;
+						}
+					}
+					span {
+						font-family: proxima_nova_condensedSBd;
+						font-size: 14px;
+						font-weight: 600;
+						color: #FFF;
+						display: block;
+						z-index: 999;
+					}
+				}
 			}	
 			
 			strong {
@@ -64,17 +160,13 @@
 	}
 }
 
-.job, .education  {
-	// height: 242px;
-	
-}
 
 .job {
-	// height: 242px;
 	margin-top: 19px;
 	background-color: #EFF3F7;
 	border-radius: 4px;
-	.job-name {
+}
+	.job-name, .education-name {
 		color: #3BA8C0;
 		font-size: 27px;
 		font-weight: 300;
@@ -83,7 +175,7 @@
 		width: 225px;
 	}
 	.job-list {
-		padding: 35px 0 36px 130px;
+		padding: 34px 0 34px 130px;
 		.job-items {
 			margin-bottom: 31px;
 			position: relative;
@@ -97,7 +189,7 @@
 				height: 30px;
 			}
 			p {
-				margin-bottom: 8px;
+				margin-bottom: 7px;
 				color: #5A636B;
 				font-size: 16px;
 				font-weight: 300;
@@ -105,8 +197,7 @@
 			.job-inner {
 				color: #5A636B;
 				font-size: 15px;
-				font-weight: 300;
-				line-height: 1;
+				font-weight: 300;				
 				margin-bottom: 0;
 			}
 			&:last-child {
@@ -114,4 +205,61 @@
 			}
 		}
 	}
+
+
+.education {
+	margin-top:21px;
+	background-color: #EFF3F7;
+	border-radius: 4px;
 }
+	.education-name {
+		width: 221px;
+		padding: 20px 0 20px 24px;
+	}
+	.education-list {
+		padding: 37px 0 32px 130px;
+		.education-items {
+			margin-bottom: 29px;
+			position: relative;
+			&:nth-child(1):before {
+				position: absolute;
+				top: 0;
+				left: -68px;
+				content: '';
+				background: url(../img/sprites.png) -150px -100px;
+				width: 41px;
+				height: 23px;
+			}
+			&:nth-child(2):before {
+				position: absolute;
+				top: 0;
+				left: -60px;
+				content: '';
+				background: url(../img/sprites.png) -100px -100px;
+				width: 26px;
+				height: 32px;
+			}
+			p {
+				color: #4A545D;
+				font-size: 16px;
+				font-weight: 300;
+				margin-bottom: 7px;
+				& a {
+					color: #4A545D;
+					font-size: 16px;
+					font-weight: 300;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			.education-inner {				
+				font-size: 15px;				
+				margin-bottom: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
