@@ -1,0 +1,77 @@
+.form {
+	background-color: #EEF3F7;
+	border-radius: 4px;
+}
+
+.form-head {
+	position: relative;
+	background-color: #00CCEA;
+	text-align: center;
+	color: #FFF;
+	font-size: 27px;
+	font-weight: 300;
+	padding: 50px 60px 45px 60px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	&:before{
+		content: '';
+		bottom: -17px;
+		left: 0;
+		position: absolute;
+		width: 649px;
+		height: 17px;
+		background-color: #00E0FB;
+	}
+}
+
+.form-content {
+	padding: 65px 130px 65px 174px;
+}
+
+.form-group {
+	label {
+		color: #4F697C;
+		font-family: "Fira Sans";
+		font-size: 20px;
+		font-weight: 300;
+	}
+	input {
+		width: 163px;
+		height: 28px;
+		background-color: #FBFCFD;
+		border: 1px solid #00AAC2;
+		border-radius: 4px;
+		font-family: "Fira Sans";
+		color: #00AAC2;
+		font-size: 12px;
+		font-weight: 300;
+		padding-left: 7px;
+	}
+	input::-webkit-input-placeholder {
+		font-family: "Fira Sans";
+		color: #00AAC2;
+		font-size: 12px;
+		font-weight: 300;
+	}
+	input[type="submit"]{
+		position: relative;
+		width: 139px;
+		height: 31px;
+		background-color: #00CCEA;
+		border-radius: 5px;
+		color: #F6F6F6;
+		font-family: "Fira Sans";
+		font-size: 19px;
+		font-weight: 300;
+		&:before {
+			position: absolute;
+			width: 139px;
+			height: 31px;
+			background-color: #00AAC2;
+			border-radius: 5px;
+			content: '';
+			top: 3px;
+			left: 0;
+		}
+	}
+}
