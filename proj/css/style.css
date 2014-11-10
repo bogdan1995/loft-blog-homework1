@@ -73,11 +73,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/layouts/_header.scss */
 .header, .footer {
   position: relative;
-  width: 100%;
   background: #eff3f7;
-  overflow: hidden;
 }
-/* line 6, ../sass/layouts/_header.scss */
+/* line 4, ../sass/layouts/_header.scss */
 .header:before, .footer:before {
   content: '';
   display: block;
@@ -88,15 +86,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
 }
 
-/* line 17, ../sass/layouts/_header.scss */
+/* line 15, ../sass/layouts/_header.scss */
 .inner-header {
   margin: 0 auto;
+  overflow: hidden;
   padding: 32px 0;
 }
 
-/* line 22, ../sass/layouts/_header.scss */
+/* line 21, ../sass/layouts/_header.scss */
 .header-name {
   display: inline-block;
+  float: left;
 }
 /* line 24, ../sass/layouts/_header.scss */
 .header-name h1 {
@@ -118,9 +118,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 41, ../sass/layouts/_header.scss */
 .header-links {
-  display: inline-block;
-  float: right;
+  display: block;
   margin-top: 4px;
+  float: right;
 }
 /* line 45, ../sass/layouts/_header.scss */
 .header-links .header-items {
@@ -653,20 +653,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 27, ../sass/layouts/_form.scss */
 .form-content {
-  padding: 65px 130px 65px 174px;
+  padding: 65px 0 174px 130px;
+  width: 377px;
 }
 
 /* line 32, ../sass/layouts/_form.scss */
+.form-group {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+/* line 35, ../sass/layouts/_form.scss */
 .form-group label {
   color: #4F697C;
   font-family: "Fira Sans";
   font-size: 20px;
   font-weight: 300;
 }
-/* line 38, ../sass/layouts/_form.scss */
+/* line 41, ../sass/layouts/_form.scss */
 .form-group input {
   width: 163px;
-  height: 28px;
   background-color: #FBFCFD;
   border: 1px solid #00AAC2;
   border-radius: 4px;
@@ -674,37 +679,99 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
-  padding-left: 7px;
+  padding: 4px 0 3px 7px;
+  margin-top: 7px;
 }
-/* line 50, ../sass/layouts/_form.scss */
+/* line 53, ../sass/layouts/_form.scss */
+.form-group.name {
+  float: left;
+}
+/* line 54, ../sass/layouts/_form.scss */
+.form-group.email {
+  float: right;
+}
+/* line 56, ../sass/layouts/_form.scss */
 .form-group input::-webkit-input-placeholder {
   font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 56, ../sass/layouts/_form.scss */
-.form-group input[type="submit"] {
-  position: relative;
+/* line 63, ../sass/layouts/_form.scss */
+.form-group.buttons {
+  display: block;
+  overflow: hidden;
+}
+/* line 66, ../sass/layouts/_form.scss */
+.form-group.buttons input[type="submit"] {
+  float: left;
+  border: none;
   width: 139px;
-  height: 31px;
   background-color: #00CCEA;
   border-radius: 5px;
   color: #F6F6F6;
   font-family: "Fira Sans";
   font-size: 19px;
   font-weight: 300;
+  padding: 0 8px;
+  box-shadow: 0 3px 0 #00AAC2;
+  margin-bottom: 3px;
 }
-/* line 66, ../sass/layouts/_form.scss */
-.form-group input[type="submit"]:before {
-  position: absolute;
+/* line 80, ../sass/layouts/_form.scss */
+.form-group.buttons input[type="reset"] {
+  float: right;
+  border: none;
   width: 139px;
-  height: 31px;
-  background-color: #00AAC2;
+  background-color: #799EB7;
   border-radius: 5px;
-  content: '';
-  top: 3px;
-  left: 0;
+  color: #F6F6F6;
+  font-family: "Fira Sans";
+  font-size: 19px;
+  font-weight: 300;
+  padding: 0 8px;
+  box-shadow: 0 3px 0 #5E7C91;
+}
+/* line 94, ../sass/layouts/_form.scss */
+.form-group textarea {
+  width: 363px;
+  background-color: #FBFCFD;
+  border: 1px solid #00AAC2;
+  border-radius: 4px;
+  resize: none;
+  padding: 6px 6px 134px 6px;
+  margin-top: 7px;
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 107, ../sass/layouts/_form.scss */
+.form-group textarea::-webkit-input-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 113, ../sass/layouts/_form.scss */
+.form-group textarea::-moz-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 119, ../sass/layouts/_form.scss */
+.form-group textarea:-moz-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 125, ../sass/layouts/_form.scss */
+.form-group textarea:-ms-input-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 /* line 5, ../sass/layouts/_container.scss */

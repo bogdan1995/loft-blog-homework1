@@ -1,8 +1,6 @@
 .header{
 	position: relative;
-	width: 100%;
 	background: #eff3f7;
-	overflow: hidden;
 	&:before {
 		content: '';
 		display: block;
@@ -16,11 +14,13 @@
 
 .inner-header {
 	margin:  0 auto;
+	overflow: hidden;
 	padding: 32px 0;
 }
 
 .header-name {
 	display: inline-block;
+	float: left;
 	h1 {
 		color: #6F727E;
 		font-family: "HelveticaNeueCyr";
@@ -39,9 +39,9 @@
 }
 
 .header-links {
-	display: inline-block;
-	float: right;
+	display: block;
 	margin-top: 4px;
+	float: right;
 	.header-items {
 		display: inline-block;
 		margin-right: 18px;
