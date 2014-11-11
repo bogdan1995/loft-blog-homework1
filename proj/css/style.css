@@ -209,8 +209,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .sidebar {
   border-radius: 4px;
   background-color: #EFF3F7;
+  overflow: hidden;
 }
-/* line 10, ../sass/layouts/_left-column.scss */
+/* line 11, ../sass/layouts/_left-column.scss */
 .sidebar .sidebar-items a {
   display: block;
   padding: 27px 0 28px 28px;
@@ -219,54 +220,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 2px solid #3BA8C0;
   color: #959AA8;
 }
-/* line 17, ../sass/layouts/_left-column.scss */
+/* line 18, ../sass/layouts/_left-column.scss */
 .sidebar .sidebar-items a:hover {
   color: #3BA8C0;
 }
-/* line 21, ../sass/layouts/_left-column.scss */
+/* line 22, ../sass/layouts/_left-column.scss */
 .sidebar .sidebar-items.active a {
   padding: 24px 0 25px 28px;
   color: #F9FAFB;
   font-size: 22px;
   background-color: #3BA8C0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 }
-/* line 29, ../sass/layouts/_left-column.scss */
+/* line 28, ../sass/layouts/_left-column.scss */
 .sidebar .sidebar-items:last-child a {
   border-bottom: 2px solid transparent;
 }
 
-/* line 37, ../sass/layouts/_left-column.scss */
+/* line 36, ../sass/layouts/_left-column.scss */
 .contacts {
   margin-top: 23px;
 }
-/* line 40, ../sass/layouts/_left-column.scss */
+/* line 39, ../sass/layouts/_left-column.scss */
 .contacts .contacts-name {
   padding: 10px 0 10px 19px;
   background-color: #3BA8C0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 45, ../sass/layouts/_left-column.scss */
+/* line 44, ../sass/layouts/_left-column.scss */
 .contacts .contacts-name p {
   color: #FBFCFD;
   font-size: 20px;
   font-weight: 300;
 }
-/* line 51, ../sass/layouts/_left-column.scss */
+/* line 50, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items {
   color: #EDEDED;
   font-size: 16px;
   font-weight: 300;
 }
-/* line 55, ../sass/layouts/_left-column.scss */
+/* line 54, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(1) {
   position: relative;
   padding: 11px 0 12px 83px;
   background: #41b9d4;
 }
-/* line 59, ../sass/layouts/_left-column.scss */
+/* line 58, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(1):before {
   content: '';
   position: absolute;
@@ -276,13 +275,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 21px;
   height: 16px;
 }
-/* line 70, ../sass/layouts/_left-column.scss */
+/* line 69, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(2) {
   position: relative;
   padding: 10px 0 11px 83px;
   background: #48cbe8;
 }
-/* line 74, ../sass/layouts/_left-column.scss */
+/* line 73, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(2):before {
   content: '';
   position: absolute;
@@ -292,7 +291,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 19px;
   height: 21px;
 }
-/* line 84, ../sass/layouts/_left-column.scss */
+/* line 83, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:last-child {
   position: relative;
   padding: 8px 0 13px 83px;
@@ -300,7 +299,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 90, ../sass/layouts/_left-column.scss */
+/* line 89, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:last-child:before {
   content: '';
   position: absolute;
@@ -330,7 +329,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 300;
   padding: 20px 0 20px 24px;
   border-bottom: 2px solid #3BA8C0;
-  width: 342px;
+  width: 322px;
 }
 /* line 18, ../sass/layouts/_right-column.scss */
 .information .main-information {
@@ -511,7 +510,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 300;
   padding: 18px 0 21px 24px;
   border-bottom: 2px solid #3BA8C0;
-  width: 225px;
+  width: 207px;
 }
 
 /* line 177, ../sass/layouts/_right-column.scss */
@@ -561,7 +560,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 215, ../sass/layouts/_right-column.scss */
 .education-name {
-  width: 221px;
+  width: 201px;
   padding: 20px 0 20px 24px;
 }
 
@@ -665,11 +664,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 35, ../sass/layouts/_form.scss */
 .form-group label {
   color: #4F697C;
-  font-family: "Fira Sans";
   font-size: 20px;
   font-weight: 300;
 }
-/* line 41, ../sass/layouts/_form.scss */
+/* line 40, ../sass/layouts/_form.scss */
 .form-group input {
   width: 163px;
   background-color: #FBFCFD;
@@ -682,22 +680,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 4px 0 3px 7px;
   margin-top: 7px;
 }
-/* line 53, ../sass/layouts/_form.scss */
+/* line 52, ../sass/layouts/_form.scss */
 .form-group.name {
   float: left;
 }
-/* line 54, ../sass/layouts/_form.scss */
+/* line 53, ../sass/layouts/_form.scss */
 .form-group.email {
   float: right;
 }
-/* line 56, ../sass/layouts/_form.scss */
+/* line 55, ../sass/layouts/_form.scss */
 .form-group input::-webkit-input-placeholder {
   font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 64, ../sass/layouts/_form.scss */
+/* line 63, ../sass/layouts/_form.scss */
 .form-group textarea {
   width: 363px;
   background-color: #FBFCFD;
@@ -711,41 +709,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 12px;
   font-weight: 300;
 }
-/* line 77, ../sass/layouts/_form.scss */
+/* line 76, ../sass/layouts/_form.scss */
 .form-group textarea::-webkit-input-placeholder {
   font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 83, ../sass/layouts/_form.scss */
+/* line 82, ../sass/layouts/_form.scss */
 .form-group textarea::-moz-placeholder {
   font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 89, ../sass/layouts/_form.scss */
+/* line 88, ../sass/layouts/_form.scss */
 .form-group textarea:-moz-placeholder {
   font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 95, ../sass/layouts/_form.scss */
+/* line 94, ../sass/layouts/_form.scss */
 .form-group textarea:-ms-input-placeholder {
   font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 104, ../sass/layouts/_form.scss */
+/* line 103, ../sass/layouts/_form.scss */
 .form-group.captcha .innerblock {
   margin-top: 7px;
   overflow: hidden;
   width: 377px;
 }
-/* line 108, ../sass/layouts/_form.scss */
+/* line 107, ../sass/layouts/_form.scss */
 .form-group.captcha .innerblock .for-captcha {
   width: 186px;
   height: 79px;
@@ -756,17 +754,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   background: url(../img/captcha.png) no-repeat #FBFCFD 50% 50%;
 }
-/* line 118, ../sass/layouts/_form.scss */
+/* line 117, ../sass/layouts/_form.scss */
 .form-group.captcha .innerblock input[type="text"] {
   float: right;
   margin-top: 27px;
 }
-/* line 126, ../sass/layouts/_form.scss */
+/* line 125, ../sass/layouts/_form.scss */
 .form-group.buttons {
   display: block;
   overflow: hidden;
 }
-/* line 130, ../sass/layouts/_form.scss */
+/* line 129, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="submit"] {
   float: left;
   border: none;
@@ -780,6 +778,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0 8px;
   box-shadow: 0 3px 0 #00AAC2;
   margin-bottom: 3px;
+  cursor: pointer;
 }
 /* line 144, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="reset"] {
@@ -794,13 +793,122 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 300;
   padding: 0 8px;
   box-shadow: 0 3px 0 #5E7C91;
+  cursor: pointer;
 }
 
-/* line 5, ../sass/layouts/_container.scss */
+/* line 1, ../sass/layouts/_work.scss */
+.work {
+  width: 576px;
+  height: 846px;
+  background-color: #EEF3F7;
+  border-radius: 4px;
+  width: 648px;
+}
+/* line 7, ../sass/layouts/_work.scss */
+.work .work-name {
+  padding: 28px 0 12px 35px;
+  color: #00AAC2;
+  font-size: 27px;
+  font-weight: 300;
+  border-bottom: 2px solid #00AAC2;
+  width: 192px;
+}
+/* line 15, ../sass/layouts/_work.scss */
+.work .work-content {
+  padding: 33px 7px 0 7px;
+}
+/* line 17, ../sass/layouts/_work.scss */
+.work .work-content .row {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 44px;
+}
+/* line 21, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 {
+  width: 33.33333%;
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+/* line 26, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 img {
+  max-width: 100%;
+}
+/* line 29, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 p {
+  text-align: center;
+  padding-top: 9px;
+  color: #44535D;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+/* line 36, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 p a {
+  color: #00AAC2;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+}
+/* line 44, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .project {
+  width: 183px;
+  height: 129px;
+  border: 2px solid #00AAC2;
+  border-radius: 4px;
+}
+/* line 49, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .project.add {
+  cursor: pointer;
+  border: 1px dashed #00AAC2;
+  background: url(../img/upload.png) no-repeat 74px 32px;
+}
+/* line 53, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .project.add p {
+  color: #00AAC2;
+  font-size: 13px;
+  font-weight: 300;
+  padding-top: 77px;
+}
+
+/* line 6, ../sass/layouts/_container.scss */
 .container {
   width: 960px;
   margin: 39px auto 38px auto;
   overflow: hidden;
+}
+
+/* line 1, ../sass/layouts/_popup.scss */
+body {
+  position: relative;
+}
+
+/* line 5, ../sass/layouts/_popup.scss */
+.popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(79, 105, 123, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+/* line 13, ../sass/layouts/_popup.scss */
+.popup .popup-inner {
+  width: 364px;
+  height: 483px;
+  background-color: #EEF3F7;
+  border-radius: 4px;
+  box-shadow: 0 6px 12.5px 0.5px rgba(5, 7, 3, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  margin: auto;
 }
 
 @media screen and (max-width: 1199px) {
@@ -815,7 +923,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 1200px;
   }
 }
-/* line 7, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 body {
   background: url(../img/background.png);
   font-family: "Fira Sans", 'Arial';

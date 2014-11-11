@@ -34,7 +34,6 @@
 	margin-bottom: 17px;
 	label {
 		color: #4F697C;
-		font-family: "Fira Sans";
 		font-size: 20px;
 		font-weight: 300;
 	}
@@ -140,6 +139,7 @@
 			padding: 0 8px;
 			box-shadow: 0 3px 0 #00AAC2;
 			margin-bottom: 3px;
+			cursor: pointer;
 		}
 		input[type="reset"]{
 			float: right;
@@ -152,7 +152,8 @@
 			font-size: 19px;
 			font-weight: 300;
 			padding: 0 8px;
-			box-shadow: 0 3px 0 #5E7C91;;
+			box-shadow: 0 3px 0 #5E7C91;
+			cursor: pointer;
 		}
 	}
 }

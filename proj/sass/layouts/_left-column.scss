@@ -6,6 +6,7 @@
 .sidebar {
 	border-radius: 4px;
 	background-color: #EFF3F7;
+	overflow:hidden;
 	.sidebar-items {
 		a {
 			display: block;
@@ -23,8 +24,6 @@
 			color: #F9FAFB;
 			font-size: 22px;
 			background-color: #3BA8C0;
-			border-top-left-radius: 4px;
-			border-top-right-radius: 4px;
 		}
 		&:last-child a {
 			border-bottom: 2px solid transparent;
