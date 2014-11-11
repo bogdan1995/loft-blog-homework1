@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -697,12 +697,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 12px;
   font-weight: 300;
 }
-/* line 63, ../sass/layouts/_form.scss */
+/* line 64, ../sass/layouts/_form.scss */
+.form-group textarea {
+  width: 363px;
+  background-color: #FBFCFD;
+  border: 1px solid #00AAC2;
+  border-radius: 4px;
+  resize: none;
+  padding: 6px 6px 134px 6px;
+  margin-top: 7px;
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 77, ../sass/layouts/_form.scss */
+.form-group textarea::-webkit-input-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 83, ../sass/layouts/_form.scss */
+.form-group textarea::-moz-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 89, ../sass/layouts/_form.scss */
+.form-group textarea:-moz-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 95, ../sass/layouts/_form.scss */
+.form-group textarea:-ms-input-placeholder {
+  font-family: "Fira Sans";
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 104, ../sass/layouts/_form.scss */
+.form-group.captcha .innerblock {
+  margin-top: 7px;
+  overflow: hidden;
+  width: 377px;
+}
+/* line 108, ../sass/layouts/_form.scss */
+.form-group.captcha .innerblock .for-captcha {
+  width: 186px;
+  height: 79px;
+  border: 1px solid #00AAC2;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  background: url(../img/captcha.png) no-repeat #FBFCFD 50% 50%;
+}
+/* line 118, ../sass/layouts/_form.scss */
+.form-group.captcha .innerblock input[type="text"] {
+  float: right;
+  margin-top: 27px;
+}
+/* line 126, ../sass/layouts/_form.scss */
 .form-group.buttons {
   display: block;
   overflow: hidden;
 }
-/* line 66, ../sass/layouts/_form.scss */
+/* line 130, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="submit"] {
   float: left;
   border: none;
@@ -717,7 +781,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 3px 0 #00AAC2;
   margin-bottom: 3px;
 }
-/* line 80, ../sass/layouts/_form.scss */
+/* line 144, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="reset"] {
   float: right;
   border: none;
@@ -730,48 +794,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 300;
   padding: 0 8px;
   box-shadow: 0 3px 0 #5E7C91;
-}
-/* line 94, ../sass/layouts/_form.scss */
-.form-group textarea {
-  width: 363px;
-  background-color: #FBFCFD;
-  border: 1px solid #00AAC2;
-  border-radius: 4px;
-  resize: none;
-  padding: 6px 6px 134px 6px;
-  margin-top: 7px;
-  font-family: "Fira Sans";
-  color: #00AAC2;
-  font-size: 12px;
-  font-weight: 300;
-}
-/* line 107, ../sass/layouts/_form.scss */
-.form-group textarea::-webkit-input-placeholder {
-  font-family: "Fira Sans";
-  color: #00AAC2;
-  font-size: 12px;
-  font-weight: 300;
-}
-/* line 113, ../sass/layouts/_form.scss */
-.form-group textarea::-moz-placeholder {
-  font-family: "Fira Sans";
-  color: #00AAC2;
-  font-size: 12px;
-  font-weight: 300;
-}
-/* line 119, ../sass/layouts/_form.scss */
-.form-group textarea:-moz-placeholder {
-  font-family: "Fira Sans";
-  color: #00AAC2;
-  font-size: 12px;
-  font-weight: 300;
-}
-/* line 125, ../sass/layouts/_form.scss */
-.form-group textarea:-ms-input-placeholder {
-  font-family: "Fira Sans";
-  color: #00AAC2;
-  font-size: 12px;
-  font-weight: 300;
 }
 
 /* line 5, ../sass/layouts/_container.scss */
