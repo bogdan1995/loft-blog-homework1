@@ -3,6 +3,7 @@ body {
 }
 
 .popup {
+	display: none;
 	width: 100%;
 	height: 100%;
 	background: rgba(79,105,123,.75);
@@ -11,8 +12,8 @@ body {
 	left: 0;
 	z-index: 999;
 	.popup-inner {
-		width: 364px;
 		height: 483px;
+		width: 364px;
 		background-color: #EEF3F7;
 		border-radius: 4px;
 		box-shadow: 0 6px 12.5px 0.5px rgba(5, 7, 3, 0.35);
@@ -24,5 +25,74 @@ body {
 		left: 0;
 		z-index: 9999;
 		margin: auto;
+		overflow: hidden;
+	}
+}
+
+.popup-name {
+	background-color: #EEF3F7;
+	color: #FBFCFD;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: #00CCEA;
+	padding: 10px 11px;
+}
+
+.popup-content {
+	padding: 20px 23px 0 24px;
+	.form-group {		
+		display: block;
+		input, textarea {
+			border: 1px solid #00CCEA;
+			width: 100%;
+			padding: 0;			
+			box-sizing: border-box;
+			padding: 9px;
+			color: #00CCEA;
+			font-size: 12px;
+			font-weight: 300;
+		}
+		textarea {
+			padding-bottom: 60px;
+		}
+
+		.upload {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			background-color: #FBFCFD;
+			border: 1px solid #00CCEA;
+			border-radius: 4px;
+			p {
+				float: left;
+				color: #00AAC2;
+				font-size: 12px;
+				font-weight: 300;
+				padding: 13px 0 13px 9px;
+			}
+			.upload-button {
+				float: right;
+				width: 52px;
+				height: 39px;
+				background-color: #00CCEA ;
+				.upload-image {
+					background: url(../img/sprites.png) #00CCEA -149px -159px;
+					width: 32px;
+					height: 24px;
+					margin: 7px 0 0 10px;
+				}
+				
+			}
+		}
+		input[type="file"] {
+			margin: 0;
+			padding: 0;
+			border: none;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 40px;
+		}
 	}
 }

@@ -391,18 +391,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
   border-radius: 3px;
   overflow: hidden;
+  z-index: 999;
 }
-/* line 67, ../sass/layouts/_right-column.scss */
+/* line 68, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li {
   background-color: #3BA8C0;
   margin-right: 8px;
 }
-/* line 70, ../sass/layouts/_right-column.scss */
+/* line 71, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#gulp {
   padding: 2px 8px;
   position: relative;
 }
-/* line 73, ../sass/layouts/_right-column.scss */
+/* line 74, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#gulp:before {
   content: '';
   display: block;
@@ -413,13 +414,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   bottom: 0;
   left: 0;
 }
-/* line 84, ../sass/layouts/_right-column.scss */
+/* line 85, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#html {
   padding: 2px 7px;
   margin-bottom: 5px;
   position: relative;
 }
-/* line 88, ../sass/layouts/_right-column.scss */
+/* line 89, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#html:before {
   content: '';
   display: block;
@@ -430,13 +431,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   bottom: 0;
   left: 0;
 }
-/* line 99, ../sass/layouts/_right-column.scss */
+/* line 100, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#css {
   padding: 2px 11px;
   margin-bottom: 5px;
   position: relative;
 }
-/* line 103, ../sass/layouts/_right-column.scss */
+/* line 104, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#css:before {
   content: '';
   display: block;
@@ -447,13 +448,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   bottom: 0;
   left: 0;
 }
-/* line 114, ../sass/layouts/_right-column.scss */
+/* line 115, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#js {
   padding: 2px 11px;
   margin-bottom: 5px;
   position: relative;
 }
-/* line 118, ../sass/layouts/_right-column.scss */
+/* line 119, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#js:before {
   content: '';
   display: block;
@@ -464,12 +465,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   bottom: 0;
   left: 0;
 }
-/* line 129, ../sass/layouts/_right-column.scss */
+/* line 130, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#git {
   padding: 2px 12px 2px 13px;
   position: relative;
 }
-/* line 132, ../sass/layouts/_right-column.scss */
+/* line 133, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li#git:before {
   content: '';
   display: block;
@@ -480,7 +481,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   bottom: 0;
   left: 0;
 }
-/* line 143, ../sass/layouts/_right-column.scss */
+/* line 144, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items:nth-child(5) li span {
   font-family: proxima_nova_condensedSBd;
   font-size: 14px;
@@ -489,21 +490,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   z-index: 999;
 }
-/* line 154, ../sass/layouts/_right-column.scss */
+/* line 155, ../sass/layouts/_right-column.scss */
 .main-information .about .about-items strong {
   color: #4A545D;
   font-size: 16px;
   font-weight: 500;
 }
 
-/* line 164, ../sass/layouts/_right-column.scss */
+/* line 165, ../sass/layouts/_right-column.scss */
 .job {
   margin-top: 19px;
   background-color: #EFF3F7;
   border-radius: 4px;
 }
 
-/* line 169, ../sass/layouts/_right-column.scss */
+/* line 170, ../sass/layouts/_right-column.scss */
 .job-name, .education-name {
   color: #3BA8C0;
   font-size: 27px;
@@ -513,16 +514,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 207px;
 }
 
-/* line 177, ../sass/layouts/_right-column.scss */
+/* line 178, ../sass/layouts/_right-column.scss */
 .job-list {
   padding: 34px 0 34px 130px;
 }
-/* line 179, ../sass/layouts/_right-column.scss */
+/* line 180, ../sass/layouts/_right-column.scss */
 .job-list .job-items {
   margin-bottom: 31px;
   position: relative;
 }
-/* line 182, ../sass/layouts/_right-column.scss */
+/* line 183, ../sass/layouts/_right-column.scss */
 .job-list .job-items:before {
   position: absolute;
   top: 0;
@@ -532,48 +533,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 32px;
   height: 30px;
 }
-/* line 191, ../sass/layouts/_right-column.scss */
+/* line 192, ../sass/layouts/_right-column.scss */
 .job-list .job-items p {
   margin-bottom: 7px;
   color: #5A636B;
   font-size: 16px;
   font-weight: 300;
 }
-/* line 197, ../sass/layouts/_right-column.scss */
+/* line 198, ../sass/layouts/_right-column.scss */
 .job-list .job-items .job-inner {
   color: #5A636B;
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 0;
 }
-/* line 203, ../sass/layouts/_right-column.scss */
+/* line 204, ../sass/layouts/_right-column.scss */
 .job-list .job-items:last-child {
   margin-bottom: 0;
 }
 
-/* line 210, ../sass/layouts/_right-column.scss */
+/* line 211, ../sass/layouts/_right-column.scss */
 .education {
   margin-top: 21px;
   background-color: #EFF3F7;
   border-radius: 4px;
 }
 
-/* line 215, ../sass/layouts/_right-column.scss */
+/* line 216, ../sass/layouts/_right-column.scss */
 .education-name {
   width: 201px;
   padding: 20px 0 20px 24px;
 }
 
-/* line 219, ../sass/layouts/_right-column.scss */
+/* line 220, ../sass/layouts/_right-column.scss */
 .education-list {
   padding: 37px 0 32px 130px;
 }
-/* line 221, ../sass/layouts/_right-column.scss */
+/* line 222, ../sass/layouts/_right-column.scss */
 .education-list .education-items {
   margin-bottom: 29px;
   position: relative;
 }
-/* line 224, ../sass/layouts/_right-column.scss */
+/* line 225, ../sass/layouts/_right-column.scss */
 .education-list .education-items:nth-child(1):before {
   position: absolute;
   top: 0;
@@ -583,7 +584,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 41px;
   height: 23px;
 }
-/* line 233, ../sass/layouts/_right-column.scss */
+/* line 234, ../sass/layouts/_right-column.scss */
 .education-list .education-items:nth-child(2):before {
   position: absolute;
   top: 0;
@@ -593,30 +594,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 26px;
   height: 32px;
 }
-/* line 242, ../sass/layouts/_right-column.scss */
+/* line 243, ../sass/layouts/_right-column.scss */
 .education-list .education-items p {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 7px;
 }
-/* line 247, ../sass/layouts/_right-column.scss */
+/* line 248, ../sass/layouts/_right-column.scss */
 .education-list .education-items p a {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-/* line 252, ../sass/layouts/_right-column.scss */
+/* line 253, ../sass/layouts/_right-column.scss */
 .education-list .education-items p a:hover {
   text-decoration: underline;
 }
-/* line 257, ../sass/layouts/_right-column.scss */
+/* line 258, ../sass/layouts/_right-column.scss */
 .education-list .education-items .education-inner {
   font-size: 15px;
   margin-bottom: 0;
 }
-/* line 261, ../sass/layouts/_right-column.scss */
+/* line 262, ../sass/layouts/_right-column.scss */
 .education-list .education-items:last-child {
   margin-bottom: 0;
 }
@@ -886,6 +887,7 @@ body {
 
 /* line 5, ../sass/layouts/_popup.scss */
 .popup {
+  display: none;
   width: 100%;
   height: 100%;
   background: rgba(79, 105, 123, 0.75);
@@ -894,10 +896,10 @@ body {
   left: 0;
   z-index: 999;
 }
-/* line 13, ../sass/layouts/_popup.scss */
+/* line 14, ../sass/layouts/_popup.scss */
 .popup .popup-inner {
-  width: 364px;
   height: 483px;
+  width: 364px;
   background-color: #EEF3F7;
   border-radius: 4px;
   box-shadow: 0 6px 12.5px 0.5px rgba(5, 7, 3, 0.35);
@@ -909,6 +911,83 @@ body {
   left: 0;
   z-index: 9999;
   margin: auto;
+  overflow: hidden;
+}
+
+/* line 32, ../sass/layouts/_popup.scss */
+.popup-name {
+  background-color: #EEF3F7;
+  color: #FBFCFD;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #00CCEA;
+  padding: 10px 11px;
+}
+
+/* line 41, ../sass/layouts/_popup.scss */
+.popup-content {
+  padding: 20px 23px 0 24px;
+}
+/* line 43, ../sass/layouts/_popup.scss */
+.popup-content .form-group {
+  display: block;
+}
+/* line 45, ../sass/layouts/_popup.scss */
+.popup-content .form-group input, .popup-content .form-group textarea {
+  border: 1px solid #00CCEA;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 9px;
+  color: #00CCEA;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 55, ../sass/layouts/_popup.scss */
+.popup-content .form-group textarea {
+  padding-bottom: 60px;
+}
+/* line 59, ../sass/layouts/_popup.scss */
+.popup-content .form-group .upload {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #FBFCFD;
+  border: 1px solid #00CCEA;
+  border-radius: 4px;
+}
+/* line 66, ../sass/layouts/_popup.scss */
+.popup-content .form-group .upload p {
+  float: left;
+  color: #00AAC2;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 13px 0 13px 9px;
+}
+/* line 73, ../sass/layouts/_popup.scss */
+.popup-content .form-group .upload .upload-button {
+  float: right;
+  width: 52px;
+  height: 39px;
+  background-color: #00CCEA;
+}
+/* line 78, ../sass/layouts/_popup.scss */
+.popup-content .form-group .upload .upload-button .upload-image {
+  background: url(../img/sprites.png) #00CCEA -149px -159px;
+  width: 32px;
+  height: 24px;
+  margin: 7px 0 0 10px;
+}
+/* line 87, ../sass/layouts/_popup.scss */
+.popup-content .form-group input[type="file"] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
 }
 
 @media screen and (max-width: 1199px) {
