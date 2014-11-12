@@ -33,12 +33,14 @@
 					font-size: 15px;
 					font-weight: 300;
 					line-height: 1.5;
+					font-family: fira_sanslight;
 					a {
 						color: #00AAC2;
 						font-size: 13px;
 						font-weight: 300;
 						font-style: italic;
 						text-decoration: none;
+						font-family: fira_sansitalic;
 					}
 				}
 				.project {
@@ -46,16 +48,46 @@
 					height: 129px;
 					border: 2px solid #00AAC2;
 					border-radius: 4px;
+					position: relative;		
 					&.add {
 					cursor: pointer;
 					border: 1px dashed #00AAC2;
 					background:  url(../img/upload.png) no-repeat 74px 32px;
+					transition: all .3s linear;
+					&:hover {
+						background-color: rgba(230, 251, 255, 0.64);
+					}
 						p {
 							color: #00AAC2;
 							font-size: 13px;
 							font-weight: 300;
 							padding-top: 77px;
+							font-family: fira_sanslight;
 						}
+					}
+				}
+				.hover {
+					display: none;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: rgba(0, 108, 167, 0.7);
+					p {
+						text-align: center;
+						padding-top: 53px;
+					}
+					a {
+						color: #EFF3F7;
+						font-size: 12px;
+						font-weight: 300;
+						border: 2.5px solid #EEF3F7;
+						border-radius: 4px;
+						text-decoration: none;
+						padding: 0 3px;
+						font-family: fira_sansbook;
+						font-style: normal;
 					}
 				}
 				

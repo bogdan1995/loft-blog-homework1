@@ -289,13 +289,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 36, ../sass/layouts/_left-column.scss */
 .contacts {
   margin-top: 23px;
+  border-radius: 4px;
+  overflow: hidden;
 }
-/* line 39, ../sass/layouts/_left-column.scss */
+/* line 41, ../sass/layouts/_left-column.scss */
 .contacts .contacts-name {
   padding: 10px 0 10px 19px;
   background-color: #3BA8C0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 }
 /* line 44, ../sass/layouts/_left-column.scss */
 .contacts .contacts-name p {
@@ -346,10 +346,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   padding: 8px 0 13px 83px;
   background: #51daf8;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
-/* line 89, ../sass/layouts/_left-column.scss */
+/* line 87, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:last-child:before {
   content: '';
   position: absolute;
@@ -679,9 +677,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .form {
   background-color: #EEF3F7;
   border-radius: 4px;
+  overflow: hidden;
 }
 
-/* line 6, ../sass/layouts/_form.scss */
+/* line 7, ../sass/layouts/_form.scss */
 .form-head {
   position: relative;
   background-color: #00CCEA;
@@ -690,10 +689,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 27px;
   font-weight: 300;
   padding: 50px 60px 45px 60px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 }
-/* line 16, ../sass/layouts/_form.scss */
+/* line 15, ../sass/layouts/_form.scss */
 .form-head:before {
   content: '';
   bottom: -17px;
@@ -704,52 +701,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00E0FB;
 }
 
-/* line 27, ../sass/layouts/_form.scss */
+/* line 26, ../sass/layouts/_form.scss */
 .form-content {
   padding: 65px 0 174px 130px;
   width: 377px;
 }
 
-/* line 32, ../sass/layouts/_form.scss */
+/* line 31, ../sass/layouts/_form.scss */
 .form-group {
   display: inline-block;
   margin-bottom: 17px;
 }
-/* line 35, ../sass/layouts/_form.scss */
+/* line 34, ../sass/layouts/_form.scss */
+.form-group label, .form-group input, .form-group textarea {
+  font-family: fira_sanslight;
+}
+/* line 37, ../sass/layouts/_form.scss */
 .form-group label {
   color: #4F697C;
   font-size: 20px;
   font-weight: 300;
 }
-/* line 40, ../sass/layouts/_form.scss */
+/* line 42, ../sass/layouts/_form.scss */
 .form-group input {
   width: 163px;
   background-color: #FBFCFD;
   border: 1px solid #00AAC2;
   border-radius: 4px;
-  font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
   padding: 4px 0 3px 7px;
   margin-top: 7px;
 }
-/* line 52, ../sass/layouts/_form.scss */
+/* line 53, ../sass/layouts/_form.scss */
 .form-group.name {
   float: left;
 }
-/* line 53, ../sass/layouts/_form.scss */
+/* line 54, ../sass/layouts/_form.scss */
 .form-group.email {
   float: right;
 }
-/* line 55, ../sass/layouts/_form.scss */
+/* line 56, ../sass/layouts/_form.scss */
 .form-group input::-webkit-input-placeholder {
-  font-family: "Fira Sans";
+  font-family: fira_sanslight;
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
-/* line 63, ../sass/layouts/_form.scss */
+/* line 64, ../sass/layouts/_form.scss */
 .form-group textarea {
   width: 363px;
   background-color: #FBFCFD;
@@ -758,35 +758,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   resize: none;
   padding: 6px 6px 134px 6px;
   margin-top: 7px;
-  font-family: "Fira Sans";
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
 /* line 76, ../sass/layouts/_form.scss */
 .form-group textarea::-webkit-input-placeholder {
-  font-family: "Fira Sans";
+  font-family: fira_sanslight;
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
 /* line 82, ../sass/layouts/_form.scss */
 .form-group textarea::-moz-placeholder {
-  font-family: "Fira Sans";
+  font-family: fira_sanslight;
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
 /* line 88, ../sass/layouts/_form.scss */
 .form-group textarea:-moz-placeholder {
-  font-family: "Fira Sans";
+  font-family: fira_sanslight;
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
 }
 /* line 94, ../sass/layouts/_form.scss */
 .form-group textarea:-ms-input-placeholder {
-  font-family: "Fira Sans";
+  font-family: fira_sanslight;
   color: #00AAC2;
   font-size: 12px;
   font-weight: 300;
@@ -826,7 +825,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #00CCEA;
   border-radius: 5px;
   color: #F6F6F6;
-  font-family: "Fira Sans";
   font-size: 19px;
   font-weight: 300;
   padding: 0 8px;
@@ -834,7 +832,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 3px;
   cursor: pointer;
 }
-/* line 144, ../sass/layouts/_form.scss */
+/* line 143, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="reset"] {
   float: right;
   border: none;
@@ -842,7 +840,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #799EB7;
   border-radius: 5px;
   color: #F6F6F6;
-  font-family: "Fira Sans";
   font-size: 19px;
   font-weight: 300;
   padding: 0 8px;
@@ -896,34 +893,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 15px;
   font-weight: 300;
   line-height: 1.5;
+  font-family: fira_sanslight;
 }
-/* line 36, ../sass/layouts/_work.scss */
+/* line 37, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 p a {
   color: #00AAC2;
   font-size: 13px;
   font-weight: 300;
   font-style: italic;
   text-decoration: none;
+  font-family: fira_sansitalic;
 }
-/* line 44, ../sass/layouts/_work.scss */
+/* line 46, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project {
   width: 183px;
   height: 129px;
   border: 2px solid #00AAC2;
   border-radius: 4px;
+  position: relative;
 }
-/* line 49, ../sass/layouts/_work.scss */
+/* line 52, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project.add {
   cursor: pointer;
   border: 1px dashed #00AAC2;
   background: url(../img/upload.png) no-repeat 74px 32px;
+  transition: all .3s linear;
 }
-/* line 53, ../sass/layouts/_work.scss */
+/* line 57, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .project.add:hover {
+  background-color: rgba(230, 251, 255, 0.64);
+}
+/* line 60, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project.add p {
   color: #00AAC2;
   font-size: 13px;
   font-weight: 300;
   padding-top: 77px;
+  font-family: fira_sanslight;
+}
+/* line 69, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 108, 167, 0.7);
+}
+/* line 77, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .hover p {
+  text-align: center;
+  padding-top: 53px;
+}
+/* line 81, ../sass/layouts/_work.scss */
+.work .work-content .row .cols-4 .hover a {
+  color: #EFF3F7;
+  font-size: 12px;
+  font-weight: 300;
+  border: 2.5px solid #EEF3F7;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0 3px;
+  font-family: fira_sansbook;
+  font-style: normal;
 }
 
 /* line 6, ../sass/layouts/_container.scss */
@@ -967,25 +1000,44 @@ body {
   overflow: hidden;
 }
 
-/* line 32, ../sass/layouts/_popup.scss */
+/* line 33, ../sass/layouts/_popup.scss */
 .popup-name {
   background-color: #EEF3F7;
   color: #FBFCFD;
   font-size: 24px;
   font-weight: 400;
   background-color: #00CCEA;
-  padding: 10px 11px;
+  padding: 12px 0 8px 12px;
+  font-family: fira_sansregular;
+  position: relative;
+  box-shadow: 0 9px 0 #00e0fb;
+}
+/* line 43, ../sass/layouts/_popup.scss */
+.popup-name .close {
+  background: url(../img/sprites.png) #00CCEA -72px -134px;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 11px;
+  position: absolute;
+  cursor: pointer;
+  float: right;
 }
 
-/* line 41, ../sass/layouts/_popup.scss */
+/* line 55, ../sass/layouts/_popup.scss */
 .popup-content {
   padding: 20px 23px 0 24px;
 }
-/* line 43, ../sass/layouts/_popup.scss */
+/* line 57, ../sass/layouts/_popup.scss */
 .popup-content .form-group {
+  margin: 0  0 10px 0;
   display: block;
 }
-/* line 45, ../sass/layouts/_popup.scss */
+/* line 60, ../sass/layouts/_popup.scss */
+.popup-content .form-group label {
+  font-family: fira_sansbook;
+}
+/* line 63, ../sass/layouts/_popup.scss */
 .popup-content .form-group input, .popup-content .form-group textarea {
   border: 1px solid #00CCEA;
   width: 100%;
@@ -995,12 +1047,13 @@ body {
   color: #00CCEA;
   font-size: 12px;
   font-weight: 300;
+  margin-top: 5px;
 }
-/* line 55, ../sass/layouts/_popup.scss */
+/* line 74, ../sass/layouts/_popup.scss */
 .popup-content .form-group textarea {
   padding-bottom: 60px;
 }
-/* line 59, ../sass/layouts/_popup.scss */
+/* line 78, ../sass/layouts/_popup.scss */
 .popup-content .form-group .upload {
   overflow: hidden;
   position: relative;
@@ -1008,8 +1061,10 @@ body {
   background-color: #FBFCFD;
   border: 1px solid #00CCEA;
   border-radius: 4px;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
-/* line 66, ../sass/layouts/_popup.scss */
+/* line 87, ../sass/layouts/_popup.scss */
 .popup-content .form-group .upload p {
   float: left;
   color: #00AAC2;
@@ -1017,21 +1072,25 @@ body {
   font-weight: 300;
   padding: 13px 0 13px 9px;
 }
-/* line 73, ../sass/layouts/_popup.scss */
+/* line 94, ../sass/layouts/_popup.scss */
 .popup-content .form-group .upload .upload-button {
+  position: relative;
   float: right;
   width: 52px;
   height: 39px;
   background-color: #00CCEA;
 }
-/* line 78, ../sass/layouts/_popup.scss */
-.popup-content .form-group .upload .upload-button .upload-image {
-  background: url(../img/sprites.png) #00CCEA -149px -159px;
+/* line 100, ../sass/layouts/_popup.scss */
+.popup-content .form-group .upload .upload-button:before {
+  background: url(../img/sprites.png) #00CCEA -107px -134px;
   width: 32px;
   height: 24px;
-  margin: 7px 0 0 10px;
+  top: 7px;
+  left: 10px;
+  position: absolute;
+  content: '';
 }
-/* line 87, ../sass/layouts/_popup.scss */
+/* line 113, ../sass/layouts/_popup.scss */
 .popup-content .form-group input[type="file"] {
   margin: 0;
   padding: 0;
@@ -1041,6 +1100,24 @@ body {
   top: 0;
   left: 0;
   height: 40px;
+  cursor: pointer;
+}
+/* line 125, ../sass/layouts/_popup.scss */
+.popup-content .form-group input[type="submit"] {
+  border: none;
+  color: #F6F6F6;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'fira_sansbook';
+  width: 139px;
+  background-color: #00CCEA;
+  padding: 6px 0;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  line-height: 1;
+  box-shadow: 0 2px 0 #00AAC2;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1199px) {

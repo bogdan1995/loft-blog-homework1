@@ -4,15 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
 	<link href="css/style.css" media="screen" rel="stylesheet">
+	<link href="css/animate.css" media="screen" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" > 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
 </head>
 <body>
 	<!-- Всплывающий попап -->
 	<div class="popup">
-		<div class="popup-inner">
+		<div class="popup-inner animated">
 			<div class="popup-name">
 				Добавление проекта
+				<div class="close"></div>
 			</div>
 			<div class="popup-content">
 				<form action="">
@@ -25,9 +27,7 @@
 						<!-- Hack -->
 						<div class="upload">
 							<p>Загрузите изображение</p>
-							<div class="upload-button">
-								<div class="upload-image"></div>
-							</div>
+							<div class="upload-button"></div>
 							<input type="file" size="1" name="project-pic" id="project-pic" accept="image">
 						</div>
 						
@@ -35,7 +35,7 @@
 					</div>
 					<div class="form-group">
 						<label for="project-url">URL проекта</label><br>
-						<input type="url" name="project-url" id="project-url" placeholder="Добавьте ссылку">
+						<input type="url" name="project-url" id="project-url" placeholder="Добавьте ссылку" >
 					</div>
 					<div class="form-group">
 						<label for="project-text">Описание</label><br>
@@ -95,22 +95,31 @@
 					<div class="row">
 						<div class="cols-4">
 							<div class="project">
-								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>					
-							</div>
+								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>
+								<div class="hover">
+									<p><a href="#">название</a></p>
+								</div>					
+							</div>							
 							<p><a href="#">site.ru</a></p>
 							<p>Информация о проекте 1 превью 2 строки...</p>
 						</div>
 						<div class="cols-4">
 							<div class="project">
-								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>					
-							</div>
+								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>
+								<div class="hover">
+									<p><a href="#">название</a></p>
+								</div>					
+							</div>							
 							<p><a href="#">site.ru</a></p>
 							<p>Информация о проекте 1 превью 2 строки...</p>
 						</div>
 						<div class="cols-4">
 							<div class="project">
-								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>					
-							</div>
+								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>
+								<div class="hover">
+									<p><a href="#">название</a></p>
+								</div>					
+							</div>							
 							<p><a href="#">site.ru</a></p>
 							<p>Информация о проекте 1 превью 2 строки...</p>
 						</div>
@@ -118,8 +127,11 @@
 					<div class="row">
 						<div class="cols-4">
 							<div class="project">
-								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>					
-							</div>
+								<a href="#"><img src="http://lorempixel.com/183/129/cats" alt="Проект" title="Проект: Котик"></a>
+								<div class="hover">
+									<p><a href="#">название</a></p>
+								</div>					
+							</div>							
 							<p><a href="#">site.ru</a></p>
 							<p>Информация о проекте 1 превью 2 строки...</p>
 						</div>
@@ -136,4 +148,7 @@
 	<div class="footer">
 		<p>&copy; 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 	</div>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
