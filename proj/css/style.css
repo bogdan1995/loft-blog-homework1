@@ -70,6 +70,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'helveticaneuecyrthin';
+  src: url("../fonts/helvetica/helveticaneuecyr-thin-webfont.eot");
+  src: url("../fonts/helvetica/helveticaneuecyr-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/helveticaneuecyr-thin-webfont.woff2") format("woff2"), url("../fonts/helvetica/helveticaneuecyr-thin-webfont.woff") format("woff"), url("../fonts/helvetica/helveticaneuecyr-thin-webfont.ttf") format("truetype"), url("../fonts/helvetica/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helveticaneuecyrbold';
+  src: url("../fonts/helvetica/helveticaneuecyr-bold-webfont.eot");
+  src: url("../fonts/helvetica/helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/helveticaneuecyr-bold-webfont.woff2") format("woff2"), url("../fonts/helvetica/helveticaneuecyr-bold-webfont.woff") format("woff"), url("../fonts/helvetica/helveticaneuecyr-bold-webfont.ttf") format("truetype"), url("../fonts/helvetica/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansitalic';
+  src: url("../fonts/fira/firasans-italic-webfont.eot");
+  src: url("../fonts/fira/firasans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-italic-webfont.woff2") format("woff2"), url("../fonts/fira/firasans-italic-webfont.woff") format("woff"), url("../fonts/fira/firasans-italic-webfont.ttf") format("truetype"), url("../fonts/fira/firasans-italic-webfont.svg#fira_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansregular';
+  src: url("../fonts/fira/firasans-regular-webfont.eot");
+  src: url("../fonts/fira/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/fira/firasans-regular-webfont.woff") format("woff"), url("../fonts/fira/firasans-regular-webfont.ttf") format("truetype"), url("../fonts/fira/firasans-regular-webfont.svg#fira_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url("../fonts/fira/firasans-medium-webfont.eot");
+  src: url("../fonts/fira/firasans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-medium-webfont.woff2") format("woff2"), url("../fonts/fira/firasans-medium-webfont.woff") format("woff"), url("../fonts/fira/firasans-medium-webfont.ttf") format("truetype"), url("../fonts/fira/firasans-medium-webfont.svg#fira_sansmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url("../fonts/fira/firasans-light-webfont.eot");
+  src: url("../fonts/fira/firasans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-light-webfont.woff2") format("woff2"), url("../fonts/fira/firasans-light-webfont.woff") format("woff"), url("../fonts/fira/firasans-light-webfont.ttf") format("truetype"), url("../fonts/fira/firasans-light-webfont.svg#fira_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url("../fonts/fira/firasans-book-webfont.eot");
+  src: url("../fonts/fira/firasans-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-book-webfont.woff2") format("woff2"), url("../fonts/fira/firasans-book-webfont.woff") format("woff"), url("../fonts/fira/firasans-book-webfont.ttf") format("truetype"), url("../fonts/fira/firasans-book-webfont.svg#fira_sansbook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 1, ../sass/layouts/_header.scss */
 .header, .footer {
   position: relative;
@@ -101,7 +150,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 24, ../sass/layouts/_header.scss */
 .header-name h1 {
   color: #6F727E;
-  font-family: "HelveticaNeueCyr";
+  font-family: helveticaneuecyrbold;
   font-size: 28px;
   font-weight: 700;
   padding: 0 0 7px 0;
@@ -110,7 +159,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 32, ../sass/layouts/_header.scss */
 .header-name p {
   color: #6F727E;
-  font-family: "HelveticaNeueCyr";
+  font-family: helveticaneuecyrthin;
   font-size: 13px;
   font-weight: 100;
   padding: 6px 0 0 0;
@@ -197,6 +246,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 300;
   text-align: center;
   padding: 30px 0 37px 0;
+  font-family: fira_sanslight;
 }
 
 /* line 1, ../sass/layouts/_left-column.scss */
@@ -495,16 +545,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #4A545D;
   font-size: 16px;
   font-weight: 500;
+  font-family: fira_sansmedium;
 }
 
-/* line 165, ../sass/layouts/_right-column.scss */
+/* line 166, ../sass/layouts/_right-column.scss */
 .job {
   margin-top: 19px;
   background-color: #EFF3F7;
   border-radius: 4px;
 }
 
-/* line 170, ../sass/layouts/_right-column.scss */
+/* line 171, ../sass/layouts/_right-column.scss */
 .job-name, .education-name {
   color: #3BA8C0;
   font-size: 27px;
@@ -514,16 +565,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 207px;
 }
 
-/* line 178, ../sass/layouts/_right-column.scss */
+/* line 179, ../sass/layouts/_right-column.scss */
 .job-list {
   padding: 34px 0 34px 130px;
 }
-/* line 180, ../sass/layouts/_right-column.scss */
+/* line 181, ../sass/layouts/_right-column.scss */
 .job-list .job-items {
   margin-bottom: 31px;
   position: relative;
 }
-/* line 183, ../sass/layouts/_right-column.scss */
+/* line 184, ../sass/layouts/_right-column.scss */
 .job-list .job-items:before {
   position: absolute;
   top: 0;
@@ -533,48 +584,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 32px;
   height: 30px;
 }
-/* line 192, ../sass/layouts/_right-column.scss */
+/* line 193, ../sass/layouts/_right-column.scss */
 .job-list .job-items p {
   margin-bottom: 7px;
   color: #5A636B;
   font-size: 16px;
   font-weight: 300;
 }
-/* line 198, ../sass/layouts/_right-column.scss */
+/* line 199, ../sass/layouts/_right-column.scss */
 .job-list .job-items .job-inner {
   color: #5A636B;
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 0;
+  font-family: fira_sanslight;
 }
-/* line 204, ../sass/layouts/_right-column.scss */
+/* line 206, ../sass/layouts/_right-column.scss */
 .job-list .job-items:last-child {
   margin-bottom: 0;
 }
 
-/* line 211, ../sass/layouts/_right-column.scss */
+/* line 213, ../sass/layouts/_right-column.scss */
 .education {
   margin-top: 21px;
   background-color: #EFF3F7;
   border-radius: 4px;
 }
 
-/* line 216, ../sass/layouts/_right-column.scss */
+/* line 218, ../sass/layouts/_right-column.scss */
 .education-name {
   width: 201px;
   padding: 20px 0 20px 24px;
 }
 
-/* line 220, ../sass/layouts/_right-column.scss */
+/* line 222, ../sass/layouts/_right-column.scss */
 .education-list {
   padding: 37px 0 32px 130px;
 }
-/* line 222, ../sass/layouts/_right-column.scss */
+/* line 224, ../sass/layouts/_right-column.scss */
 .education-list .education-items {
   margin-bottom: 29px;
   position: relative;
 }
-/* line 225, ../sass/layouts/_right-column.scss */
+/* line 227, ../sass/layouts/_right-column.scss */
 .education-list .education-items:nth-child(1):before {
   position: absolute;
   top: 0;
@@ -584,7 +636,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 41px;
   height: 23px;
 }
-/* line 234, ../sass/layouts/_right-column.scss */
+/* line 236, ../sass/layouts/_right-column.scss */
 .education-list .education-items:nth-child(2):before {
   position: absolute;
   top: 0;
@@ -594,30 +646,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 26px;
   height: 32px;
 }
-/* line 243, ../sass/layouts/_right-column.scss */
+/* line 245, ../sass/layouts/_right-column.scss */
 .education-list .education-items p {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 7px;
 }
-/* line 248, ../sass/layouts/_right-column.scss */
+/* line 250, ../sass/layouts/_right-column.scss */
 .education-list .education-items p a {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-/* line 253, ../sass/layouts/_right-column.scss */
+/* line 255, ../sass/layouts/_right-column.scss */
 .education-list .education-items p a:hover {
   text-decoration: underline;
 }
-/* line 258, ../sass/layouts/_right-column.scss */
+/* line 260, ../sass/layouts/_right-column.scss */
 .education-list .education-items .education-inner {
   font-size: 15px;
   margin-bottom: 0;
+  font-family: fira_sanslight;
 }
-/* line 262, ../sass/layouts/_right-column.scss */
+/* line 265, ../sass/layouts/_right-column.scss */
 .education-list .education-items:last-child {
   margin-bottom: 0;
 }
@@ -1005,5 +1058,5 @@ body {
 /* line 8, ../sass/style.scss */
 body {
   background: url(../img/background.png);
-  font-family: "Fira Sans", 'Arial';
+  font-family: fira_sansbook, 'Arial';
 }
