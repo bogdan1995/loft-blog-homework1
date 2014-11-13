@@ -7,11 +7,6 @@
 	<link href="css/animate.css" media="screen" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" > 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
-	<style>
-		.project:hover > .hover {
-			top: 0;
-		}
-	</style>
 </head>
 <body>
 	<!-- Всплывающий попап -->
@@ -68,7 +63,7 @@
 				</div>
 				<div class="contacts-block">
 					<ul class="contacts-list">
-						<li class="contacts-items">ponomarenko@ya.ru</li>
+						<li class="contacts-items">ponomarenko.bogdan@ya.ru</li>
 						<li class="contacts-items">+79818609215</li>
 						<li class="contacts-items">bogdasha1995</li>
 					</ul>

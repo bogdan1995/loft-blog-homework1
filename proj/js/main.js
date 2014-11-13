@@ -9,7 +9,7 @@
 		addClassToNav: function () {
 			var items = $('.sidebar-items'),
 			links = items.find('a'),
-			link = location.href.slice(34);
+			link = location.href.slice(29);
 
 			$.each(links, function (index, val) {
 				var item = $(val);
@@ -22,17 +22,9 @@
 
 		setUpListeners : function () {
 			$('.add').on('click', this.showForm);
-			$('.project').on('click', this.func);
 		},
 
-		DURATION : 300,
-
-		func : function () {
-			var proj = $('.project'),
-				hover = proj.find('.hover');
-
-				console.log('qq');
-		},		
+		DURATION : 300,	
 
 		showForm : function () {
 			var popup = $('.popup'),

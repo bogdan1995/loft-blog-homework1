@@ -72,6 +72,13 @@
 			position: relative;
 			padding: 11px 0 12px 83px;
 			background: #41b9d4;
+			transition: all .5s;
+			&:hover {
+				padding-left: 40px;
+				&:before {
+					left: 13px;
+				}
+			}
 			&:before {
 				content: '';
 				position: absolute;
@@ -80,6 +87,7 @@
 				background: url(../img/sprites.png) 0 -100px;
 				width: 21px;
 				height: 16px;
+				transition: all .5s;
 			}
 
 		}

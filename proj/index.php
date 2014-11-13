@@ -26,7 +26,7 @@
 				</div>
 				<div class="contacts-block">
 					<ul class="contacts-list">
-						<li class="contacts-items">ponomarenko@ya.ru</li>
+						<li class="contacts-items">ponomarenko.bogdan@ya.ru</li>
 						<li class="contacts-items">+79818609215</li>
 						<li class="contacts-items">bogdasha1995</li>
 					</ul>
