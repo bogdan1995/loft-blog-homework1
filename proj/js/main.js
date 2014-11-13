@@ -3,7 +3,23 @@
 
 		initializate : function () {
 			this.setUpListeners();
+			this.addClassToNav();
 		},
+
+		addClassToNav: function () {
+			var items = $('.sidebar-items'),
+			links = items.find('a'),
+			link = location.href.slice(34);
+
+			$.each(links, function (index, val) {
+				var item = $(val);
+			
+				if (item.attr('href') === link) {
+					item.closest(items).addClass('active');
+				}
+			})
+		},
+
 		setUpListeners : function () {
 			$('.add').on('click', this.showForm);
 			$('.project').on('hover', this.func);
