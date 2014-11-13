@@ -55,7 +55,7 @@
 					background:  url(../img/upload.png) no-repeat 74px 32px;
 					transition: all .3s linear;
 					&:hover {
-						background-color: rgba(230, 251, 255, 0.64);
+						background-color: rgba(230, 251, 255, 0.64);					
 					}
 						p {
 							color: #00AAC2;
@@ -65,15 +65,22 @@
 							font-family: fira_sanslight;
 						}
 					}
+					&:hover {
+						.hover {
+							top: 0;
+							opacity: 1;						}
+					}
 				}
 				.hover {
-					display: none;
 					position: absolute;
+					opacity: 0;
 					width: 100%;
 					height: 100%;
-					top: 0;
 					left: 0;
+					top: -100%;
 					background-color: rgba(0, 108, 167, 0.7);
+					transition: all .3s;
+					z-index: 1;
 					p {
 						text-align: center;
 						padding-top: 53px;
@@ -95,4 +102,3 @@
 		}
 	}
 }
-

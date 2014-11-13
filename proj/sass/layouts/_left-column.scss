@@ -10,23 +10,40 @@
 	.sidebar-items {
 		a {
 			display: block;
-			padding: 27px 0 28px 28px;
+			padding: 28px 0 29px 28px;
 			font-weight: 300;
 			text-decoration: none;
-			border-bottom: 2px solid #3BA8C0;
 			color: #959AA8;
+			position: relative;			
 			&:hover {
 				color: #3BA8C0;
 			}
+			&:after {
+				position: absolute;
+				content: '';
+				left: 50%;
+				right: 50%;
+				bottom: -2px;
+				height: 2px;
+				background: #3BA8C0;
+				transition: all .3s;
+			}
+			&:hover:after {
+				right: 6px;
+				left: 6px;
+			}
 		}
 		&.active a{
-			padding: 24px 0 25px 28px;
+			padding: 25px 0 26px 28px;
 			color: #F9FAFB;
 			font-size: 22px;
 			background-color: #3BA8C0;
+			&:after {
+				background: none;
+			}
 		}
-		&:last-child a {
-			border-bottom: 2px solid transparent;
+		&:last-child a:after {
+			background: none;
 		}
 
 			

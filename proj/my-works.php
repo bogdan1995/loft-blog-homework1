@@ -7,6 +7,11 @@
 	<link href="css/animate.css" media="screen" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" > 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+	<style>
+		.project:hover > .hover {
+			top: 0;
+		}
+	</style>
 </head>
 <body>
 	<!-- Всплывающий попап -->

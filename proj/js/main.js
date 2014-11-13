@@ -22,7 +22,7 @@
 
 		setUpListeners : function () {
 			$('.add').on('click', this.showForm);
-			$('.project').on('hover', this.func);
+			$('.project').on('click', this.func);
 		},
 
 		DURATION : 300,
@@ -31,7 +31,7 @@
 			var proj = $('.project'),
 				hover = proj.find('.hover');
 
-				hover.fadeIn(DURATION);
+				console.log('qq');
 		},		
 
 		showForm : function () {
