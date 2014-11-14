@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link href="css/style.css" media="screen" rel="stylesheet">
+	<link href="css/style.min.css" media="screen" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" > 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
 </head>
@@ -102,6 +102,6 @@
 	<?php include("php/footer.php"); ?>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/prefixfree.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>
