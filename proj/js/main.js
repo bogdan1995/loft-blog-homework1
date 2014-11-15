@@ -22,6 +22,10 @@
 
 		setUpListeners : function () {
 			$('.add').on('click', this.showForm);
+			$('form').on('submit', this.validForm);
+			$('form').on('keydown', 'input', this.destroyTooltipFromInput);
+			$('form').on('keydown', 'textarea', this.destroyTooltipFromTextarea);
+			$('form').on('reset',  this.cleanForm);
 		},
 
 		DURATION : 300,	
@@ -41,6 +45,60 @@
 				popupInner.addClass('fadeOutRightBig');
 				popup.fadeOut(this.DURATION);
 			})
+		},
+
+		validForm : function (e) {
+			e.preventDefault();
+
+			var form = $(this),
+				submitBtn = form.find('input[type="submit"]');
+
+			if (app.submitForm(form) === false) return false;
+
+			console.log('go to ajax');
+		},
+
+		submitForm : function(form) {
+			var inputs = form.find('input'),
+				textarea = form.find('textarea'),
+				tooltip = textarea.closest('.form-group').find('.tooltip');
+
+				valid = true;
+
+
+				$.each(inputs, function(index,val) {
+					var input = $(val),
+						val = input.val(),
+						formGroup = input.closest('.form-group'),
+						tooltip = formGroup.find('.tooltip');
+
+						if (val.length === 0) {
+							tooltip.addClass('active');
+							valid = false;
+						} else {
+							tooltip.removeClass('active');
+						}
+				})
+
+				if (textarea.val().length === 0) {
+					tooltip.addClass('active');
+					valid = false;
+				} else {
+					tooltip.removeClass('active');
+				}
+
+				return valid;
+		},
+
+		destroyTooltipFromTextarea : function () {
+			$(this).parents('.form-group').find('.tooltip').removeClass('active');
+		},
+		destroyTooltipFromInput : function () {
+			$(this).parents('.form-group').find('.tooltip').removeClass('active');
+		},
+
+		cleanForm : function () {
+			$(this).find('.tooltip').removeClass('active');
 		}
 	}
 

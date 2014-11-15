@@ -6,7 +6,8 @@
 .sidebar {
 	border-radius: 4px;
 	background-color: #EFF3F7;
-	overflow:hidden;
+	overflow:hidden;	
+	margin-bottom: 23px;
 	.sidebar-items {
 		a {
 			display: block;
@@ -50,8 +51,7 @@
 	}
 }
 
-.contacts {
-	margin-top: 23px;	
+.contacts {	
 	border-radius: 4px;
 	overflow: hidden;
 	// height: 155px;
@@ -65,7 +65,11 @@
 		}
 	}
 	.contacts-items {
-		color: #EDEDED;
+		
+		a {
+			color: #EDEDED ;
+			text-decoration: none ;
+		}
 		font-size: 16px;
 		font-weight: 300;
 		&:nth-child(1) {

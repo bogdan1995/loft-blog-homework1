@@ -1,7 +1,6 @@
 .form {
 	background-color: #EEF3F7;
 	border-radius: 4px;
-	overflow: hidden;
 }
 
 .form-head {
@@ -30,6 +29,7 @@
 
 .form-group {
 	display: inline-block;
+	position: relative;
 	margin-bottom: 17px;
 	label, input, textarea {		
 		font-family: fira_sanslight;

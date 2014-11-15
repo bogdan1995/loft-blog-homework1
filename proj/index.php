@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link href="css/style.min.css" media="screen" rel="stylesheet">
+	<link href="css/style.css" media="screen" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" > 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
 </head>
@@ -26,9 +26,9 @@
 				</div>
 				<div class="contacts-block">
 					<ul class="contacts-list">
-						<li class="contacts-items">ponomarenko.bogdan@ya.ru</li>
-						<li class="contacts-items">+79818609215</li>
-						<li class="contacts-items">bogdasha1995</li>
+						<li class="contacts-items"><a href="mailto:ponomarenko.bogdan@ya.ru">ponomarenko.bogdan@ya.ru</a></li>
+						<li class="contacts-items"><a href="tel:+79818609215">+79818609215</a></li>
+						<li class="contacts-items"><a href="skype:bogdasha1995">bogdasha1995</a></li>
 					</ul>
 				</div>
 			</div>

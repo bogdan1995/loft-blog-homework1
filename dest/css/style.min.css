@@ -546,7 +546,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 .contacts{margin-top:23px;border-radius:4px;overflow:hidden}
 .contacts .contacts-name{padding:10px 0 10px 19px;background-color:#3BA8C0}
 .contacts .contacts-name p{color:#FBFCFD;font-size:20px;font-weight:300}
-.contacts .contacts-items{color:#EDEDED;font-size:16px;font-weight:300}
+.contacts .contacts-items{font-size:16px;font-weight:300}
+.contacts .contacts-items a{color:#EDEDED;text-decoration:none}
 .contacts .contacts-items:nth-child(1){position:relative;padding:11px 0 12px 83px;background:#41b9d4;transition:all .5s}
 .contacts .contacts-items:nth-child(1):hover{padding-left:40px}
 .contacts .contacts-items:nth-child(1):hover:before{left:13px}

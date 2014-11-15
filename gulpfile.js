@@ -22,7 +22,11 @@ gulp.task('default', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dest/css'));
     
-     gulp.src('proj/*.php')
+     
+});
+
+gulp.task('minify', function() {
+  gulp.src('proj/*.php')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dest'));
 

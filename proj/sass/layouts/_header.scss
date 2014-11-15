@@ -1,6 +1,7 @@
 .header{
 	position: relative;
 	background: #eff3f7;
+	margin-bottom: 39px;
 	&:before {
 		content: '';
 		display: block;
@@ -19,7 +20,6 @@
 }
 
 .header-name {
-	display: inline-block;
 	float: left;
 	h1 {
 		color: #6F727E;
@@ -39,7 +39,6 @@
 }
 
 .header-links {
-	display: block;
 	margin-top: 4px;
 	float: right;
 	.header-items {
@@ -100,7 +99,11 @@
 }
 
 .footer {
-	@extend .header;
+	background: #eff3f7;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
 	&:before {
 		content: '';
 		display: block;

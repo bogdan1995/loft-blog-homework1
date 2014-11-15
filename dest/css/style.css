@@ -3410,9 +3410,10 @@ summary {
 .footer {
   position: relative;
   background: #eff3f7;
+  margin-bottom: 39px;
 }
 
-/* line 4, ../sass/layouts/_header.scss */
+/* line 5, ../sass/layouts/_header.scss */
 
 .header:before,
 .footer:before {
@@ -3425,7 +3426,7 @@ summary {
   width: 100%;
 }
 
-/* line 15, ../sass/layouts/_header.scss */
+/* line 16, ../sass/layouts/_header.scss */
 
 .inner-header {
   margin: 0 auto;
@@ -3433,10 +3434,9 @@ summary {
   padding: 32px 0;
 }
 
-/* line 21, ../sass/layouts/_header.scss */
+/* line 22, ../sass/layouts/_header.scss */
 
 .header-name {
-  display: inline-block;
   float: left;
 }
 
@@ -3464,31 +3464,30 @@ summary {
 /* line 41, ../sass/layouts/_header.scss */
 
 .header-links {
-  display: block;
   margin-top: 4px;
   float: right;
 }
 
-/* line 45, ../sass/layouts/_header.scss */
+/* line 44, ../sass/layouts/_header.scss */
 
 .header-links .header-items {
   display: inline-block;
   margin-right: 18px;
 }
 
-/* line 48, ../sass/layouts/_header.scss */
+/* line 47, ../sass/layouts/_header.scss */
 
 .header-links .header-items:last-child {
   margin-right: 0;
 }
 
-/* line 51, ../sass/layouts/_header.scss */
+/* line 50, ../sass/layouts/_header.scss */
 
 .header-links .header-items a {
   background: url("../img/sprites.png");
 }
 
-/* line 56, ../sass/layouts/_header.scss */
+/* line 55, ../sass/layouts/_header.scss */
 
 .header-links .vk a {
   background-position: 0 0;
@@ -3497,13 +3496,13 @@ summary {
   display: inline-block;
 }
 
-/* line 61, ../sass/layouts/_header.scss */
+/* line 60, ../sass/layouts/_header.scss */
 
 .header-links .vk a:hover {
   background-position: 0 -50px;
 }
 
-/* line 67, ../sass/layouts/_header.scss */
+/* line 66, ../sass/layouts/_header.scss */
 
 .header-links .tw a {
   background-position: -50px 0;
@@ -3512,13 +3511,13 @@ summary {
   display: inline-block;
 }
 
-/* line 72, ../sass/layouts/_header.scss */
+/* line 71, ../sass/layouts/_header.scss */
 
 .header-links .tw a:hover {
   background-position: -50px -50px;
 }
 
-/* line 79, ../sass/layouts/_header.scss */
+/* line 78, ../sass/layouts/_header.scss */
 
 .header-links .fb a {
   background-position: -100px 0;
@@ -3527,13 +3526,13 @@ summary {
   display: inline-block;
 }
 
-/* line 84, ../sass/layouts/_header.scss */
+/* line 83, ../sass/layouts/_header.scss */
 
 .header-links .fb a:hover {
   background-position: -100px -50px;
 }
 
-/* line 90, ../sass/layouts/_header.scss */
+/* line 89, ../sass/layouts/_header.scss */
 
 .header-links .gh a {
   background-position: -150px 0;
@@ -3542,13 +3541,13 @@ summary {
   display: inline-block;
 }
 
-/* line 95, ../sass/layouts/_header.scss */
+/* line 94, ../sass/layouts/_header.scss */
 
 .header-links .gh a:hover {
   background-position: -150px -50px;
 }
 
-/* line 104, ../sass/layouts/_header.scss */
+/* line 103, ../sass/layouts/_header.scss */
 
 .footer:before {
   content: '';
@@ -3560,7 +3559,7 @@ summary {
   width: 100%;
 }
 
-/* line 113, ../sass/layouts/_header.scss */
+/* line 112, ../sass/layouts/_header.scss */
 
 .footer p {
   color: #4A545D;
@@ -3670,12 +3669,18 @@ summary {
 /* line 67, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items {
-  color: #EDEDED;
   font-size: 16px;
   font-weight: 300;
 }
 
-/* line 71, ../sass/layouts/_left-column.scss */
+/* line 69, ../sass/layouts/_left-column.scss */
+
+.contacts .contacts-items a {
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+/* line 75, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:nth-child(1) {
   position: relative;
@@ -3684,19 +3689,19 @@ summary {
   transition: all .5s;
 }
 
-/* line 76, ../sass/layouts/_left-column.scss */
+/* line 80, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:nth-child(1):hover {
   padding-left: 40px;
 }
 
-/* line 78, ../sass/layouts/_left-column.scss */
+/* line 82, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:nth-child(1):hover:before {
   left: 13px;
 }
 
-/* line 82, ../sass/layouts/_left-column.scss */
+/* line 86, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:nth-child(1):before {
   content: '';
@@ -3709,7 +3714,7 @@ summary {
   transition: all .5s;
 }
 
-/* line 94, ../sass/layouts/_left-column.scss */
+/* line 98, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:nth-child(2) {
   position: relative;
@@ -3717,7 +3722,7 @@ summary {
   background: #48cbe8;
 }
 
-/* line 98, ../sass/layouts/_left-column.scss */
+/* line 102, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:nth-child(2):before {
   content: '';
@@ -3729,7 +3734,7 @@ summary {
   height: 21px;
 }
 
-/* line 108, ../sass/layouts/_left-column.scss */
+/* line 112, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:last-child {
   position: relative;
@@ -3737,7 +3742,7 @@ summary {
   background: #51daf8;
 }
 
-/* line 112, ../sass/layouts/_left-column.scss */
+/* line 116, ../sass/layouts/_left-column.scss */
 
 .contacts .contacts-items:last-child:before {
   content: '';
@@ -4465,7 +4470,7 @@ summary {
 
 .container {
   width: 960px;
-  margin: 39px auto 38px auto;
+  margin: 0 auto 38px auto;
   overflow: hidden;
 }
 

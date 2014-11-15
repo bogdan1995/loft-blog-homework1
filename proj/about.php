@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link href="css/style.min.css" media="screen" rel="stylesheet">
+	<link href="css/style.css" media="screen" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" > 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
 </head>
@@ -25,9 +25,9 @@
 				</div>
 				<div class="contacts-block">
 					<ul class="contacts-list">
-						<li class="contacts-items">ponomarenko.bogdan@ya.ru</li>
-						<li class="contacts-items">+79818609215</li>
-						<li class="contacts-items">bogdasha1995</li>
+						<li class="contacts-items"><a href="mailto:ponomarenko.bogdan@ya.ru">ponomarenko.bogdan@ya.ru</a></li>
+						<li class="contacts-items"><a href="tel:+79818609215">+79818609215</a></li>
+						<li class="contacts-items"><a href="skype:bogdasha1995">bogdasha1995</a></li>
 					</ul>
 				</div>
 			</div>
@@ -41,20 +41,27 @@
 					<form action="">
 						<div class="form-group name">
 							<label for="name">Имя</label><br>
-							<input type="text" id="name" name="name" placeholder="Как мне к Вам обращаться"></div>
+							<input type="text" id="name" name="name" placeholder="Как мне к Вам обращаться">
+							<div class="tooltip tooltip-right">введите имя</div>
+						</div>							
 						<div class="form-group email">
 							<label for="email">Email</label><br>
 							<input type="email" id="email" name="email" placeholder="Куда мне писать">
+							<div class="tooltip">введите email</div>
 						</div>
 						<div class="form-group text">
 							<label for="about">Сообщение</label><br>
 							<textarea name="about" id="about" cols="0" rows="0" placeholder="Кратко в чем суть"></textarea>
+							<div class="tooltip">введите текст</div>
 						</div>
 						<div class="captcha form-group">
 							<label for="captcha">Введите код, указанный на картинке</label>
 							<div class="innerblock">
-								<div class="for-captcha"></div>
+								<div class="for-captcha">
+									<img src="/lib/captcha/simple-php-captcha.php?_CAPTCHA&t=0.89526000+1416084510" alt="">
+								</div>
 								<input type="text" name="captcha" id="captcha" placeholder="Введите код">
+								<div class="tooltip">введите код</div>
 							</div>
 						</div>
 						<div class="buttons form-group">
@@ -72,5 +79,5 @@
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/prefixfree.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
 </body>

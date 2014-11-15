@@ -1,0 +1,36 @@
+.tooltip {
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: -130px;
+	background: #f97e76;
+	width: 90px;
+	font-size: 13px;
+	padding: 7.5px;
+	color: #fff;
+	&:after {
+		position: absolute;
+		content: '';
+		border-right: 15px solid #f97e76;
+		border-top: 14px solid transparent;
+		border-bottom: 14px solid transparent;
+		top: 0px;
+		left: -15px;
+	}
+}
+
+.active {
+	display: block;
+}
+
+.tooltip-right {
+	left: -130px;
+	text-align:center;
+	&:after {
+		left: 105px;
+		border-left: 15px solid #f97e76;
+		border-top: 14px solid transparent;
+		border-bottom: 14px solid transparent;
+		border-right: none;
+	}
+}
