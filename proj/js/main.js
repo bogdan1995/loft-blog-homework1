@@ -55,7 +55,24 @@
 
 			if (app.submitForm(form) === false) return false;
 
-			console.log('go to ajax');
+            var str = form.serialize();
+
+            $.ajax({
+                url: 'php/send_mail.php',
+                type: 'POST',
+                data: str
+            })
+                .done(function (msg) {
+                    if (msg === "OK") {
+                        var result = '<div class="form-content" >Ваше сообщение успешно отправлено </div>'
+                        form.html(result);
+                    }else {
+                        form.html(msg);
+                    }
+                })
+                .always (function () {
+                console.log('sending message');
+            });
 		},
 
 		submitForm : function(form) {

@@ -916,6 +916,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 0;
   opacity: 1;
 }
+
+.project {
+    background: #fff;
+}
+
+.project a img {
+    max-width: 100%;
+}
+
 /* line 74, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .hover {
   position: absolute;
@@ -1119,6 +1128,7 @@ body {
   font-size: 13px;
   padding: 7.5px;
   color: #fff;
+    z-index: 999999px;
 }
 /* line 11, ../sass/layouts/_tooltip.scss */
 .tooltip:after {
