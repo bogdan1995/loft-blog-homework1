@@ -50,8 +50,7 @@
 		validForm : function (e) {
 			e.preventDefault();
 
-			var form = $(this),
-				submitBtn = form.find('input[type="submit"]');
+			var form = $(this);
 
 			if (app.submitForm(form) === false) return false;
 
@@ -64,7 +63,7 @@
             })
                 .done(function (msg) {
                     if (msg === "OK") {
-                        var result = '<div class="form-content" >Ваше сообщение успешно отправлено </div>'
+                        var result = '<div class="comeClass" >Ваше сообщение успешно отправлено </div>'
                         form.html(result);
                     }else {
                         form.html(msg);

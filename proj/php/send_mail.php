@@ -1,57 +1,41 @@
 <?php
 
-define("CONTACT_FORM", 'ponomarenko.bogdan@yandex.ru');
+require_once 'PHPMailer-master/PHPMailerAutoload.php';
 
-function ValidateEmail($value){
-    $regex = '/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i';
+$mail = new PHPMailer;
 
-    if($value == '') {
-        return false;
-    } else {
-        $string = preg_replace($regex, '', $value);
-    }
+$mail -> isSMTP();
+$mail -> Host = 'mx1.hostinger.ru';
+$mail -> SMTPAuth = true;
+$mail -> Username = 'support@ponomarenko-bogdan.ru';
+$mail -> Password = 'bogdan1995';
+$mail -> Port = 2525;
 
-    return empty($string) ? true : false;
+$mail -> From = 'support@ponomarenko-bogdan.ru';
+$mail -> FromName = stripslashes($_POST['name']);
+$mail -> addAddress('ponomarenko.bogdan@yandex.ru', 'Богдан Пономаренко');
+$mail -> CharSet = 'UTF-8';
+
+$mail -> WordWrap = 50;
+$mail -> isHTML(true);
+
+$mail -> Subject = 'Сообщение с сайта ponomarenko-bogdan.ru';
+$mail -> Body =
+'<html>
+    <head>
+        <titile>Сообщение с сайта ponomarenko-bogdan.ru</title>
+    </head>
+    <body>
+        <p><strong>Имя:</strong><br/>'.$mail -> FromName.'</p>
+        <p><strong>Email:</strong><br/> '.($_POST['email']).'</p>
+        <p><strong>Сообщение:</strong><br/> '.($_POST['about']).'</p>
+    </body>
+</html>';
+$mail -> AltBody = 'Alternative text';
+
+if(!$mail->send()) {
+    echo 'Не отправлено';
+    echo 'Error code: ' . $mail -> ErrorInfo;
+} else {
+    echo 'Отправлено';
 }
-
-$post = (!empty($_POST)) ? true : false;
-
-if($post){
-
-    $name = stripslashes($_POST['name']);
-    $text = stripslashes($_POST['about']);
-    $email = stripslashes($_POST['email']);
-    $subject = 'Сообщение с сайта Богдана Пономаренко';
-    $error = '';
-    $message = '
-            <html>
-                    <head>
-                            <title>Заявка</title>
-                    </head>
-                    <body>
-                            <p>Имя: '.$name.'</p>
-                            <p>Сообщение : '.$text.'</p>
-                            <p>Email : '.$email.'</p>
-                    </body>
-            </html>';
-
-    if (!ValidateEmail($email)){
-        $error = 'Email введен неправильно!';
-    }
-
-    if(!$error){
-        $mail = mail(CONTACT_FORM, $subject, $message,
-            "From: ".$name." <".$email.">\r\n"
-            ."Reply-To: ".$email."\r\n"
-            ."Content-type: text/html; charset=utf-8 \r\n"
-            ."X-Mailer: PHP/" . phpversion());
-
-        if($mail){
-            echo 'OK';
-        }
-    }else{
-        echo '<div class="bg-danger">'.$error.'</div>';
-    }
-
-}
-?>

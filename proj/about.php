@@ -52,7 +52,7 @@
                         У вас интересный проект? Напишите мне
                     </div>
                     <div class="form-content">
-                        <form action="">
+                        <form>
                             <div class="form-group name">
                                 <label for="name">Имя</label><br>
                                 <input type="text" id="name" name="name" placeholder="Как мне к Вам обращаться">
