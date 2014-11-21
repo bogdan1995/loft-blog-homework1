@@ -828,6 +828,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
 }
 
+/* line 159, ../sass/layouts/_form.scss */
+.success {
+  padding: 15px 0;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 19px;
+  color: #fff;
+  background: #3BA8C0;
+  box-shadow: 0 5px 8px grey;
+  border-radius: 4px;
+}
+
 /* line 1, ../sass/layouts/_work.scss */
 .work {
   width: 576px;
