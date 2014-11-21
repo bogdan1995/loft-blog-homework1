@@ -27,22 +27,24 @@
 
 
 .main-information {
-	overflow: hidden;
-	.avatar {
-		margin: 0 32px 31px 40px;
-		float: left;
+  overflow: hidden;
+}
+.avatar {
+	margin: 0 32px 31px 40px;
+	float: left;
+	border-radius: 50%;
+	border: 7px solid #30a6bd;
+	width: 201px;
+	height: 200px;
+	img {
+		max-width: 100%;
 		border-radius: 50%;
-		border: 7px solid #30a6bd;
-		width: 201px;
-		height: 200px;
-		img {
-			max-width: 100%;
-			border-radius: 50%;
-		}
 	}
+}
 	.about {
-		overflow: hidden;
-		margin-top: 7px;
+      overflow: hidden;
+      margin-top: 7px;
+    }
 		.about-items{
 			margin-bottom: 28px;
 			color: #37424D;
@@ -75,11 +77,7 @@
 					background-color: #3BA8C0;
 					margin-right: 8px;
 					overflow: hidden;
-					&#gulp, 
-					&#html, 
-					&#css, 
-					&#js, 
-					&#git {background: linear-gradient( rgba(59,168,192,1) 0%,rgba(59,168,192,1) 50%,rgba(46,140,162,1) 51%,rgba(46,140,162,1) 100%);}
+                    background: linear-gradient( rgba(59,168,192,1) 0%,rgba(59,168,192,1) 50%,rgba(46,140,162,1) 51%,rgba(46,140,162,1) 100%);
 
 					&#html, 
 					&#css, 
@@ -118,8 +116,8 @@
 				font-family: fira_sansmedium;
 			}
 		}
-	}
-}
+
+
 
 
 .job-name, .education-name {
@@ -173,21 +171,24 @@
 	.education-items {
 		margin-bottom: 29px;
 		position: relative;
+      &:before {
+        position: absolute;
+        background: url(../img/sprites.png)
+      }
 		&:nth-child(1):before {
-			position: absolute;
+
 			top: 0;
 			left: -68px;
 			content: '';
-			background: url(../img/sprites.png) -150px -100px;
+          background-position: -150px -100px;
 			width: 41px;
 			height: 23px;
 		}
 		&:nth-child(2):before {
-			position: absolute;
 			top: 0;
 			left: -60px;
 			content: '';
-			background: url(../img/sprites.png) -100px -100px;
+			background-position:  -100px -100px;
 			width: 26px;
 			height: 32px;
 		}

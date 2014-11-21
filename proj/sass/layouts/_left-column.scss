@@ -65,15 +65,20 @@
 		}
 	}
 	.contacts-items {
-		
+      font-size: 16px;
+      font-weight: 300;
+      position: relative;
+        &:before {
+          background:  url(../img/sprites.png);
+          content: '';
+          position: absolute;
+        }
 		a {
 			color: #EDEDED ;
 			text-decoration: none ;
 		}
-		font-size: 16px;
-		font-weight: 300;
+
 		&:nth-child(1) {
-			position: relative;
 			padding: 11px 0 12px 83px;
 			background: #41b9d4;
 			transition: all .5s;
@@ -84,11 +89,9 @@
 				}
 			}
 			&:before {
-				content: '';
-				position: absolute;
 				top: 11px;
 				left: 42px;
-				background: url(../img/sprites.png) 0 -100px;
+				background-position: 0 -100px;
 				width: 21px;
 				height: 16px;
 				transition: all .5s;
@@ -96,29 +99,23 @@
 
 		}
 		&:nth-child(2) {
-			position: relative;
 			padding: 10px 0 11px 83px;
 			background: #48cbe8;
 			&:before {
-				content: '';
-				position: absolute;
 				top: 7px;
 				left: 42px;
-				background: url(../img/sprites.png) -25px -100px;
+				background-position:  -25px -100px;
 				width: 19px;
 				height: 21px;
 			}
 		}
 		&:last-child {
-			position: relative;
 			padding: 8px 0 13px 83px;
 			background: #51daf8;
 			&:before {
-				content: '';
-				position: absolute;
 				top: 8px;
 				left: 39px;
-				background: url(../img/sprites.png) 0 -120px;
+				background-position: 0 -120px;
 				width: 20px;
 				height: 20px;
 			}

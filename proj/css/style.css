@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -334,67 +334,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .contacts .contacts-items {
   font-size: 16px;
   font-weight: 300;
+  position: relative;
 }
-/* line 69, ../sass/layouts/_left-column.scss */
+/* line 71, ../sass/layouts/_left-column.scss */
+.contacts .contacts-items:before {
+  background: url(../img/sprites.png);
+  content: '';
+  position: absolute;
+}
+/* line 76, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items a {
   color: #EDEDED;
   text-decoration: none;
 }
-/* line 75, ../sass/layouts/_left-column.scss */
+/* line 81, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(1) {
-  position: relative;
   padding: 11px 0 12px 83px;
   background: #41b9d4;
   transition: all .5s;
 }
-/* line 80, ../sass/layouts/_left-column.scss */
+/* line 85, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(1):hover {
   padding-left: 40px;
 }
-/* line 82, ../sass/layouts/_left-column.scss */
+/* line 87, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(1):hover:before {
   left: 13px;
 }
-/* line 86, ../sass/layouts/_left-column.scss */
+/* line 91, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(1):before {
-  content: '';
-  position: absolute;
   top: 11px;
   left: 42px;
-  background: url(../img/sprites.png) 0 -100px;
+  background-position: 0 -100px;
   width: 21px;
   height: 16px;
   transition: all .5s;
 }
-/* line 98, ../sass/layouts/_left-column.scss */
+/* line 101, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(2) {
-  position: relative;
   padding: 10px 0 11px 83px;
   background: #48cbe8;
 }
-/* line 102, ../sass/layouts/_left-column.scss */
+/* line 104, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:nth-child(2):before {
-  content: '';
-  position: absolute;
   top: 7px;
   left: 42px;
-  background: url(../img/sprites.png) -25px -100px;
+  background-position: -25px -100px;
   width: 19px;
   height: 21px;
 }
 /* line 112, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:last-child {
-  position: relative;
   padding: 8px 0 13px 83px;
   background: #51daf8;
 }
-/* line 116, ../sass/layouts/_left-column.scss */
+/* line 115, ../sass/layouts/_left-column.scss */
 .contacts .contacts-items:last-child:before {
-  content: '';
-  position: absolute;
   top: 8px;
   left: 39px;
-  background: url(../img/sprites.png) 0 -120px;
+  background-position: 0 -120px;
   width: 20px;
   height: 20px;
 }
@@ -436,8 +434,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .main-information {
   overflow: hidden;
 }
-/* line 31, ../sass/layouts/_right-column.scss */
-.main-information .avatar {
+
+/* line 32, ../sass/layouts/_right-column.scss */
+.avatar {
   margin: 0 32px 31px 40px;
   float: left;
   border-radius: 50%;
@@ -445,86 +444,85 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 201px;
   height: 200px;
 }
-/* line 38, ../sass/layouts/_right-column.scss */
-.main-information .avatar img {
+/* line 39, ../sass/layouts/_right-column.scss */
+.avatar img {
   max-width: 100%;
   border-radius: 50%;
 }
-/* line 43, ../sass/layouts/_right-column.scss */
-.main-information .about {
+
+/* line 44, ../sass/layouts/_right-column.scss */
+.about {
   overflow: hidden;
   margin-top: 7px;
 }
-/* line 46, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items {
+
+/* line 48, ../sass/layouts/_right-column.scss */
+.about-items {
   margin-bottom: 28px;
   color: #37424D;
   font-size: 15px;
   font-weight: 300;
 }
-/* line 51, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(2) {
+/* line 53, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(2) {
   color: #5A636B;
 }
-/* line 54, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(3), .main-information .about .about-items:nth-child(4) {
+/* line 56, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(3), .about-items:nth-child(4) {
   color: #4A545D;
 }
-/* line 57, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) strong {
+/* line 59, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) strong {
   float: left;
   display: block;
   color: #5A636B;
 }
-/* line 63, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) .skills {
+/* line 65, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) .skills {
   display: block;
   overflow: hidden;
   padding-left: 7px;
 }
-/* line 68, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) .skills li {
+/* line 70, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) .skills li {
   display: inline-block;
   border-radius: 3px;
   overflow: hidden;
   z-index: 999;
 }
-/* line 74, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li {
+/* line 76, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li {
   background-color: #3BA8C0;
   margin-right: 8px;
   overflow: hidden;
-}
-/* line 78, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#gulp, .main-information .about .about-items:nth-child(5) li#html, .main-information .about .about-items:nth-child(5) li#css, .main-information .about .about-items:nth-child(5) li#js, .main-information .about .about-items:nth-child(5) li#git {
   background: linear-gradient(#3ba8c0 0%, #3ba8c0 50%, #2e8ca2 51%, #2e8ca2 100%);
 }
-/* line 84, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#html, .main-information .about .about-items:nth-child(5) li#css, .main-information .about .about-items:nth-child(5) li#js {
+/* line 82, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li#html, .about-items:nth-child(5) li#css, .about-items:nth-child(5) li#js {
   margin-bottom: 5px;
 }
-/* line 88, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#gulp {
+/* line 86, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li#gulp {
   padding: 2px 8px;
 }
-/* line 91, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#html {
+/* line 89, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li#html {
   padding: 2px 7px;
 }
-/* line 94, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#css {
+/* line 92, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li#css {
   padding: 2px 11px;
 }
-/* line 97, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#js {
+/* line 95, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li#js {
   padding: 2px 11px;
 }
-/* line 100, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li#git {
+/* line 98, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li#git {
   padding: 2px 12px 2px 13px;
 }
-/* line 103, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items:nth-child(5) li span {
+/* line 101, ../sass/layouts/_right-column.scss */
+.about-items:nth-child(5) li span {
   font-family: proxima_nova_condensedSBd;
   font-size: 14px;
   font-weight: 600;
@@ -532,15 +530,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   z-index: 99;
 }
-/* line 114, ../sass/layouts/_right-column.scss */
-.main-information .about .about-items strong {
+/* line 112, ../sass/layouts/_right-column.scss */
+.about-items strong {
   color: #4A545D;
   font-size: 16px;
   font-weight: 500;
   font-family: fira_sansmedium;
 }
 
-/* line 125, ../sass/layouts/_right-column.scss */
+/* line 123, ../sass/layouts/_right-column.scss */
 .job-name, .education-name {
   color: #3BA8C0;
   font-size: 27px;
@@ -550,16 +548,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 207px;
 }
 
-/* line 133, ../sass/layouts/_right-column.scss */
+/* line 131, ../sass/layouts/_right-column.scss */
 .job-list {
   padding: 34px 0 34px 130px;
 }
-/* line 135, ../sass/layouts/_right-column.scss */
+/* line 133, ../sass/layouts/_right-column.scss */
 .job-list .job-items {
   margin-bottom: 31px;
   position: relative;
 }
-/* line 138, ../sass/layouts/_right-column.scss */
+/* line 136, ../sass/layouts/_right-column.scss */
 .job-list .job-items:before {
   position: absolute;
   top: 0;
@@ -569,14 +567,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 32px;
   height: 30px;
 }
-/* line 147, ../sass/layouts/_right-column.scss */
+/* line 145, ../sass/layouts/_right-column.scss */
 .job-list .job-items p {
   margin-bottom: 7px;
   color: #5A636B;
   font-size: 16px;
   font-weight: 300;
 }
-/* line 153, ../sass/layouts/_right-column.scss */
+/* line 151, ../sass/layouts/_right-column.scss */
 .job-list .job-items .job-inner {
   color: #5A636B;
   font-size: 15px;
@@ -584,71 +582,74 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 0;
   font-family: fira_sanslight;
 }
-/* line 160, ../sass/layouts/_right-column.scss */
+/* line 158, ../sass/layouts/_right-column.scss */
 .job-list .job-items:last-child {
   margin-bottom: 0;
 }
 
-/* line 167, ../sass/layouts/_right-column.scss */
+/* line 165, ../sass/layouts/_right-column.scss */
 .education-name {
   width: 201px;
   padding: 20px 0 20px 24px;
 }
 
-/* line 171, ../sass/layouts/_right-column.scss */
+/* line 169, ../sass/layouts/_right-column.scss */
 .education-list {
   padding: 37px 0 32px 130px;
 }
-/* line 173, ../sass/layouts/_right-column.scss */
+/* line 171, ../sass/layouts/_right-column.scss */
 .education-list .education-items {
   margin-bottom: 29px;
   position: relative;
 }
-/* line 176, ../sass/layouts/_right-column.scss */
-.education-list .education-items:nth-child(1):before {
+/* line 174, ../sass/layouts/_right-column.scss */
+.education-list .education-items:before {
   position: absolute;
+  background: url(../img/sprites.png);
+}
+/* line 178, ../sass/layouts/_right-column.scss */
+.education-list .education-items:nth-child(1):before {
   top: 0;
   left: -68px;
   content: '';
-  background: url(../img/sprites.png) -150px -100px;
+  background-position: -150px -100px;
   width: 41px;
   height: 23px;
 }
-/* line 185, ../sass/layouts/_right-column.scss */
+/* line 187, ../sass/layouts/_right-column.scss */
 .education-list .education-items:nth-child(2):before {
-  position: absolute;
   top: 0;
   left: -60px;
   content: '';
-  background: url(../img/sprites.png) -100px -100px;
+  background-position: -100px -100px;
   width: 26px;
   height: 32px;
 }
-/* line 194, ../sass/layouts/_right-column.scss */
+/* line 195, ../sass/layouts/_right-column.scss */
 .education-list .education-items p {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 7px;
 }
-/* line 199, ../sass/layouts/_right-column.scss */
+/* line 200, ../sass/layouts/_right-column.scss */
 .education-list .education-items p a {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-/* line 204, ../sass/layouts/_right-column.scss */
+/* line 205, ../sass/layouts/_right-column.scss */
 .education-list .education-items p a:hover {
   text-decoration: underline;
 }
-/* line 209, ../sass/layouts/_right-column.scss */
+/* line 210, ../sass/layouts/_right-column.scss */
 .education-list .education-items .education-inner {
   font-size: 15px;
   margin-bottom: 0;
   font-family: fira_sanslight;
 }
-/* line 214, ../sass/layouts/_right-column.scss */
+/* line 215, ../sass/layouts/_right-column.scss */
 .education-list .education-items:last-child {
   margin-bottom: 0;
 }
@@ -891,19 +892,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 2px solid #00AAC2;
   border-radius: 4px;
   position: relative;
+  background: #fff;
 }
-/* line 52, ../sass/layouts/_work.scss */
+/* line 53, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project.add {
   cursor: pointer;
   border: 1px dashed #00AAC2;
   background: url(../img/upload.png) no-repeat 74px 32px;
   transition: all .3s linear;
 }
-/* line 57, ../sass/layouts/_work.scss */
+/* line 58, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project.add:hover {
   background-color: rgba(230, 251, 255, 0.64);
 }
-/* line 60, ../sass/layouts/_work.scss */
+/* line 61, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project.add p {
   color: #00AAC2;
   font-size: 13px;
@@ -911,21 +913,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 77px;
   font-family: fira_sanslight;
 }
-/* line 69, ../sass/layouts/_work.scss */
+/* line 70, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .project:hover .hover {
   top: 0;
   opacity: 1;
 }
-
-.project {
-    background: #fff;
-}
-
-.project a img {
-    max-width: 100%;
-}
-
-/* line 74, ../sass/layouts/_work.scss */
+/* line 75, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .hover {
   position: absolute;
   opacity: 0;
@@ -937,12 +930,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all .3s;
   z-index: 1;
 }
-/* line 84, ../sass/layouts/_work.scss */
+/* line 85, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .hover p {
   text-align: center;
   padding-top: 53px;
 }
-/* line 88, ../sass/layouts/_work.scss */
+/* line 89, ../sass/layouts/_work.scss */
 .work .work-content .row .cols-4 .hover a {
   color: #EFF3F7;
   font-size: 12px;
@@ -1128,7 +1121,6 @@ body {
   font-size: 13px;
   padding: 7.5px;
   color: #fff;
-    z-index: 999999px;
 }
 /* line 11, ../sass/layouts/_tooltip.scss */
 .tooltip:after {

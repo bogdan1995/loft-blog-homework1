@@ -8,11 +8,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Пономаренко Богдан | Frontend Developer</title>
         <meta name="description" content="">
-
         <link href="css/style.css" media="screen" rel="stylesheet">
         <link href="css/animate.css" media="screen" rel="stylesheet">
+
         <link rel="icon" href="favicon.ico" type="image/x-icon" >
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+
+        <!--[if lte IE 9]>
+        <link type="text/css" rel="stylesheet" href="css/ie.css" />
+        <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -21,6 +26,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <?php $active = 3; ?>
 
         <!-- Include header.php -->
 
@@ -94,6 +100,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/prefixfree.min.js"></script>
+        <script src="js/vendor/placeholder.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -3,22 +3,12 @@
 
 		initializate : function () {
 			this.setUpListeners();
-			this.addClassToNav();
+            this.placeholders();
 		},
 
-		addClassToNav: function () {
-			var items = $('.sidebar-items'),
-			links = items.find('a'),
-			link = location.href.slice(29);
-
-			$.each(links, function (index, val) {
-				var item = $(val);
-			
-				if (item.attr('href') === link) {
-					item.closest(items).addClass('active');
-				}
-			})
-		},
+        placeholders : function () {
+                $('input, textarea').placeholder();
+        },
 
 		setUpListeners : function () {
 			$('.add').on('click', this.showForm);
