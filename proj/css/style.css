@@ -805,6 +805,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 4px;
 }
 
+/* line 172, ../sass/layouts/_form.scss */
+.for-captcha {
+  text-align: center;
+}
+
 /* line 1, ../sass/layouts/_work.scss */
 .work {
   background-color: #EEF3F7;

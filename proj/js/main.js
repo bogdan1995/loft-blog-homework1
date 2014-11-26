@@ -59,8 +59,12 @@
                 type: 'POST',
                 data: str
             })
-                .done(function (msg) {
-                    if (msg === "OK") {
+                .done(function (ans) {
+                    var mes = ans.mes,
+                        status = ans.status;
+
+
+                    if (status === "OK") {
                         var result = '<div class="comeClass" >Ваше сообщение успешно отправлено </div>'
                         form.html(result);
                     } else {

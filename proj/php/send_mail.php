@@ -1,28 +1,39 @@
 ﻿<?php
+session_start();
 
-require_once 'PHPMailer-master/PHPMailerAutoload.php';
+$postCaptcha = $_POST['captcha'];
+$captcha = $_SESSION['randStrn'];
 
-$mail = new PHPMailer;
+echo $postCaptcha;
+echo $captcha;
 
-$mail -> isSMTP();
-$mail -> Host = 'smtp.yandex.ru';
-$mail -> SMTPAuth = true;
-$mail -> Username = 'ponomarenko.bogdan@yandex.ru';
-$mail -> Password = 'bogdan1995';
-$mail->SMTPSecure = 'ssl'; 
-$mail -> Port = 465;
-$mail -> From = 'ponomarenko.bogdan@yandex.ru';
+if ($postCaptcha != $captcha) {
+    echo 'код неверный';
+    exit;
+} else {
 
-$mail -> FromName = stripslashes($_POST['name']);
-$mail -> addAddress('ponomarenko.bogdan@yandex.ru', 'Богдан Пономаренко');
-$mail -> CharSet = 'UTF-8';
+    require_once 'PHPMailer-master/PHPMailerAutoload.php';
+    $mail = new PHPMailer;
 
-$mail -> WordWrap = 50;
-$mail -> isHTML(true);
+    $mail -> isSMTP();
+    $mail -> Host = 'smtp.yandex.ru';
+    $mail -> SMTPAuth = true;
+    $mail -> Username = 'ponomarenko.bogdan@yandex.ru';
+    $mail -> Password = 'bogdan1995';
+    $mail->SMTPSecure = 'ssl';
+    $mail -> Port = 465;
+    $mail -> From = 'ponomarenko.bogdan@yandex.ru';
 
-$mail -> Subject = 'ponomarenko-bogdan.ru | Сообщение';
-$mail -> Body =
-'<html>
+    $mail -> FromName = stripslashes($_POST['name']);
+    $mail -> addAddress('ponomarenko.bogdan@yandex.ru', 'Богдан Пономаренко');
+    $mail -> CharSet = 'UTF-8';
+
+    $mail -> WordWrap = 50;
+    $mail -> isHTML(true);
+
+    $mail -> Subject = 'ponomarenko-bogdan.ru | Сообщение';
+    $mail -> Body =
+        '<html>
     <head>
         <titile>ponomarenko-bogdan.ru | Сообщение</title>
     </head>
@@ -32,12 +43,13 @@ $mail -> Body =
         <p><strong>Сообщение:</strong><br/> '.($_POST['about']).'</p>
     </body>
 </html>';
-$mail -> AltBody = 'Alternative text';
+    $mail -> AltBody = 'Alternative text';
 
-if(!$mail->send()) {
-     'div class="success">Не отправлено</div>';
-    echo 'Error code: ' . $mail -> ErrorInfo;
-} else {
-    include ('success.php');
+    if(!$mail->send()) {
+        'div class="success">Не отправлено</div>';
+        echo 'Error code: ' . $mail -> ErrorInfo;
+    } else {
+        include ('success.php');
+    }
 }
 ?>
