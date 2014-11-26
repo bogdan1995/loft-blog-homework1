@@ -1,36 +1,13 @@
-.tooltip {
-	display: none;
-	position: absolute;
-	top: 50%;
-	right: -130px;
-	background: #f97e76;
-	width: 90px;
-	font-size: 13px;
-	padding: 7.5px;
-	color: #fff;
-	&:after {
-		position: absolute;
-		content: '';
-		border-right: 15px solid #f97e76;
-		border-top: 14px solid transparent;
-		border-bottom: 14px solid transparent;
-		top: 0px;
-		left: -15px;
-	}
+.form-group .error {
+  background-color: rgba(249, 126, 118, 0.33);
+  border-color: #F97E76;
+  transition: all .3s ease-in-out;
 }
 
-.active {
-	display: block;
-}
-
-.tooltip-right {
-	left: -130px;
-	text-align:center;
-	&:after {
-		left: 105px;
-		border-left: 15px solid #f97e76;
-		border-top: 14px solid transparent;
-		border-bottom: 14px solid transparent;
-		border-right: none;
-	}
+.tooltip{
+  color: white !important;
+  background: #F27C78 !important;
+  border-radius: 4px !important;
+  border: 3px solid  #F27C78 !important;
+  font-size: 13px  !important;
 }

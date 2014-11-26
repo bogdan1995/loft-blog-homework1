@@ -4,29 +4,27 @@
 	overflow: hidden;
 }
 
-.information, .job {
+.content {
 	margin-bottom: 23px;
 }
 
-.information, .job, .education {
+.content {
 	background-color: #EFF3F7;
 	border-radius: 4px;
 }
 
-.information-name {
+.content-name {
 	color: #3BA8C0;
 	font-size: 27px;
 	font-weight: 300;
 	padding: 20px 0 20px 24px;
 	border-bottom: 2px solid #3BA8C0;
 	width: 322px;
-}
-.main-information {
-	margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 
-.main-information {
+.main-content {
   overflow: hidden;
 }
 .avatar {
@@ -118,102 +116,75 @@
 		}
 
 
-
-
-.job-name, .education-name {
-	color: #3BA8C0;
-	font-size: 27px;
-	font-weight: 300;
-	padding: 18px 0 21px 24px;
-	border-bottom: 2px solid #3BA8C0;
-	width: 207px;
-}
-.job-list {
-	padding: 34px 0 34px 130px;
-	.job-items {
+.content-list {
+	padding: 14px 0 34px 130px;
+	.content-items {
 		margin-bottom: 31px;
 		position: relative;
-		&:before {
-			position: absolute;
-			top: 0;
-			left: -50px;
-			content: '';
-			background: url(../img/sprites.png) -50px -100px;
-			width: 32px;
-			height: 30px;
-		}
-		p {
-			margin-bottom: 7px;
-			color: #5A636B;
-			font-size: 16px;
-			font-weight: 300;
-		}
-		.job-inner {
-			color: #5A636B;
-			font-size: 15px;
-			font-weight: 300;				
-			margin-bottom: 0;
-			font-family: fira_sanslight;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
+        &.job {
+          &:before {
+            position: absolute;
+            top: 0;
+            left: -50px;
+            content: '';
+            background: url(../img/sprites.png) -50px -100px;
+            width: 32px;
+            height: 30px;
+          }
+          p {
+            color: #5A636B;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
 	}
 }
 
-
-.education-name {
-	width: 201px;
-	padding: 20px 0 20px 24px;
+.content-inner {
+  color: #5A636B;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0;
+  font-family: fira_sanslight;
 }
-.education-list {
-	padding: 37px 0 32px 130px;
-	.education-items {
-		margin-bottom: 29px;
-		position: relative;
-      &:before {
-        position: absolute;
-        background: url(../img/sprites.png)
+
+.content-items {
+  padding-right: 30px;
+  &:before {
+    position: absolute;
+    background: url(../img/sprites.png)
+  }
+  &:nth-child(1):before {
+
+    top: 0;
+    left: -68px;
+    content: '';
+    background-position: -150px -100px;
+    width: 41px;
+    height: 23px;
+  }
+  &:nth-child(2):before {
+    top: 0;
+    left: -60px;
+    content: '';
+    background-position:  -100px -100px;
+    width: 26px;
+    height: 32px;
+  }
+  p {
+    color: #4A545D;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 7px;
+    & a {
+      color: #4A545D;
+      font-size: 16px;
+      font-weight: 300;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
       }
-		&:nth-child(1):before {
-
-			top: 0;
-			left: -68px;
-			content: '';
-          background-position: -150px -100px;
-			width: 41px;
-			height: 23px;
-		}
-		&:nth-child(2):before {
-			top: 0;
-			left: -60px;
-			content: '';
-			background-position:  -100px -100px;
-			width: 26px;
-			height: 32px;
-		}
-		p {
-			color: #4A545D;
-			font-size: 16px;
-			font-weight: 300;
-			margin-bottom: 7px;
-			& a {
-				color: #4A545D;
-				font-size: 16px;
-				font-weight: 300;
-				text-decoration: none;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
-		.education-inner {				
-			font-size: 15px;				
-			margin-bottom: 0;
-			font-family: fira_sanslight;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+    }
+  }
 }

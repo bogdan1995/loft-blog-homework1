@@ -1,25 +1,17 @@
-<?php
+﻿<?php
 
 require_once 'PHPMailer-master/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
 $mail -> isSMTP();
-$mail -> Host = 'mx1.hostinger.ru';
+$mail -> Host = 'smtp.yandex.ru';
 $mail -> SMTPAuth = true;
-$mail -> Username = 'support@ponomarenko-bogdan.ru';
+$mail -> Username = 'ponomarenko.bogdan@yandex.ru';
 $mail -> Password = 'bogdan1995';
-$mail -> Port = 2525;
-$mail -> From = 'support@ponomarenko-bogdan.ru';
-
-//$mail -> isSMTP();
-//$mail -> Host = 'smtp.yandex.ru';
-//$mail -> SMTPAuth = true;
-//$mail -> Username = 'ponomarenko.bogdan@yandex.ru';
-//$mail -> Password = 'bogdan1995';
-//$mail -> SMTPSecure = 'ssl';
-//$mail -> Port = 465;
-//$mail -> From = 'ponomarenko.bogdan@yandex.ru';
+$mail->SMTPSecure = 'ssl'; 
+$mail -> Port = 465;
+$mail -> From = 'ponomarenko.bogdan@yandex.ru';
 
 $mail -> FromName = stripslashes($_POST['name']);
 $mail -> addAddress('ponomarenko.bogdan@yandex.ru', 'Богдан Пономаренко');

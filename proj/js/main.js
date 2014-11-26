@@ -1,48 +1,56 @@
 (function () {
-	app = {
+    app = {
 
-		initializate : function () {
-			this.setUpListeners();
+        initializate: function () {
+            this.setUpListeners();
             this.placeholders();
-		},
-
-        placeholders : function () {
-                $('input, textarea').placeholder();
         },
 
-		setUpListeners : function () {
-			$('.add').on('click', this.showForm);
-			$('form').on('submit', this.validForm);
-			$('form').on('keydown', 'input', this.destroyTooltipFromInput);
-			$('form').on('keydown', 'textarea', this.destroyTooltipFromTextarea);
-			$('form').on('reset',  this.cleanForm);
-		},
+        placeholders: function () {
+            $('input, textarea').placeholder();
+        },
 
-		DURATION : 300,	
+        setUpListeners: function () {
+            $('.add').on('click', this.showForm);
+            $('form').on('submit', this.validForm);
+            $('form').on('keydown', 'input, textarea', this.destroyTooltipFromInput);
+            $('form').on('reset', this.cleanForm);
+        },
 
-		showForm : function () {
-			var popup = $('.popup'),
-				popupInner = popup.find('.popup-inner');
-				closeBtn = popup.find('.close');
+        DURATION: 300,
 
-			popupInner.removeClass('fadeOutRightBig')
+        showForm: function () {
+            var popup = $('.popup'),
+                popupInner = popup.find('.popup-inner');
+            closeBtn = popup.find('.close');
 
-			popup.fadeIn(this.DURATION);
-			popupInner.addClass('fadeInLeftBig');
+            popupInner.removeClass('fadeOutRightBig')
 
-			closeBtn.on('click', function (callback) {
-				popupInner.removeClass('fadeInLeftBig');
-				popupInner.addClass('fadeOutRightBig');
-				popup.fadeOut(this.DURATION);
-			})
-		},
+            popup.fadeIn(this.DURATION);
+            popupInner.addClass('fadeInLeftBig');
 
-		validForm : function (e) {
-			e.preventDefault();
+            closeBtn.on('click', function (callback) {
+                popupInner.removeClass('fadeInLeftBig');
+                popupInner.addClass('fadeOutRightBig');
+                $.each($('input, textarea'), function (index, val) {
+                    var elem = $(val);
 
-			var form = $(this);
+                    if (elem.attr('type') != 'submit') {
+                        elem.val('');
+                    }
 
-			if (app.submitForm(form) === false) return false;
+
+                });
+                popup.fadeOut(this.DURATION);
+            })
+        },
+
+        validForm: function (e) {
+            e.preventDefault();
+
+            var form = $(this);
+
+            if (app.submitForm(form) === false) return false;
 
             var str = form.serialize();
 
@@ -55,59 +63,70 @@
                     if (msg === "OK") {
                         var result = '<div class="comeClass" >Ваше сообщение успешно отправлено </div>'
                         form.html(result);
-                    }else {
+                    } else {
                         form.html(msg);
                     }
-                })
-                .always (function () {
-                console.log('sending message');
+                });
+        },
+
+        submitForm: function (form) {
+            var elems = $('input, textarea'),
+                valid = true;
+
+
+            $.each(elems, function (index, val) {
+                var elem = $(val),
+                    val = elem.val(),
+                    formGroup = elem.closest('.form-group'),
+                    label = formGroup.find('label').text().toLowerCase(),
+                    error = 'введите ' + label,
+                    positionTriangle = elem.data('class'),
+                    position = elem.data('target');
+
+                if (val.length === 0) {
+                    if (elem.attr('id') === 'captcha') {
+                        error = error.substring(7, error.length)
+                    }
+                    if ((elem).not('input[type="file"], input[type="reset]')) {
+                        elem.qtip({
+                            content: {
+                                text: error
+                            },
+                            position: {
+                                my: position,
+                                at: positionTriangle,
+                                viewport: $(window)
+                            },
+                            style: {
+                                classes: ' qtip-red tooltip'
+                            }
+                        })
+                            .addClass('error')
+
+                    }
+                    valid = false;
+                } else {
+                    elem
+                        .removeClass('error')
+                        .qtip('destroy');
+                }
             });
-		},
-
-		submitForm : function(form) {
-			var inputs = form.find('input'),
-				textarea = form.find('textarea'),
-				tooltip = textarea.closest('.form-group').find('.tooltip');
-
-				valid = true;
 
 
-				$.each(inputs, function(index,val) {
-					var input = $(val),
-						val = input.val(),
-						formGroup = input.closest('.form-group'),
-						tooltip = formGroup.find('.tooltip');
+            return valid;
+        },
 
-						if (val.length === 0) {
-							tooltip.addClass('active');
-							valid = false;
-						} else {
-							tooltip.removeClass('active');
-						}
-				})
 
-				if (textarea.val().length === 0) {
-					tooltip.addClass('active');
-					valid = false;
-				} else {
-					tooltip.removeClass('active');
-				}
+        destroyTooltipFromInput: function () {
+            $(this).removeClass('error').qtip('destroy');
+        },
 
-				return valid;
-		},
+        cleanForm: function () {
+            $(this).find('.error').removeClass('error');
+            $('.qtip').remove();
+        }
+    }
 
-		destroyTooltipFromTextarea : function () {
-			$(this).parents('.form-group').find('.tooltip').removeClass('active');
-		},
-		destroyTooltipFromInput : function () {
-			$(this).parents('.form-group').find('.tooltip').removeClass('active');
-		},
-
-		cleanForm : function () {
-			$(this).find('.tooltip').removeClass('active');
-		}
-	}
-
-	app.initializate();
+    app.initializate();
 
 })();

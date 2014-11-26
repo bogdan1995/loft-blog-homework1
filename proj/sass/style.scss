@@ -6,7 +6,33 @@
 @import "layouts/tooltip";
 @import "layouts/queries";
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
 	background: url(../img/background.png);
 	font-family: fira_sansbook, 'Arial';
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* Хак для IE 6 и 7 */
 }

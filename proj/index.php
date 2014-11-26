@@ -50,11 +50,11 @@
                 </div>
             </div>
             <div class="right-column">
-                <div class="information">
-                    <div class="information-name">
+                <div class="content">
+                    <div class="content-name">
                         Основная информация
                     </div>
-                    <div class="main-information">
+                    <div class="main-content">
                         <div class="avatar">
                             <img src="img/avatar.jpg" alt="">
                         </div>
@@ -77,36 +77,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="job">
-                    <div class="job-name">
+                <div class="content">
+                    <div class="content-name">
                         Опыт работы
                     </div>
-                    <div class="job-information">
-                        <ul class="job-list">
-                            <li class="job-items">
+                    <div class="main-content">
+                        <ul class="content-list">
+                            <li class="content-items job">
                                 <p>ООО "Рема" - Продавец дисков</p>
-                                <p class="job-inner">Сентябрь 2009 - Май 2010</p>
+                                <p class="content-inner">Сентябрь 2009 - Май 2010</p>
                             </li>
-                            <li class="job-items">
+                            <li class="content-items job">
                                 <p>ООО "СТС" - Упаковщик</p>
-                                <p class="job-inner">Июнь 2014 - Июль 2014</p>
+                                <p class="content-inner">Июнь 2014 - Июль 2014</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="education">
-                    <div class="education-name">
+                <div class="content">
+                    <div class="content-name">
                         Образование
                     </div>
-                    <div class="education-informaion">
-                        <ul class="education-list">
-                            <li class="education-items">
+                    <div class="main-content">
+                        <ul class="content-list">
+                            <li class="content-items">
                                 <p>Незаконченное высшее. СПбГПУ</p>
-                                <p class="education-inner">Сентябрь 2013 - по настоящее время</p>
+                                <p class="content-inner">Сентябрь 2013 - по настоящее время</p>
                             </li>
-                            <li class="education-items">
+                            <li class="content-items">
                                 <p>Курсы <a href="http://loftschool.ru" target="_blink">Loftschool.ru</a></p>
-                                <p class="education-inner">Ноябрь 2014 - по настоящее время</p>
+                                <p class="content-inner">Ноябрь 2014 - по настоящее время</p>
                             </li>
                         </ul>
                     </div>
