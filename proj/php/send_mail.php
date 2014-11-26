@@ -8,7 +8,7 @@ echo $postCaptcha;
 echo $captcha;
 
 if ($postCaptcha != $captcha) {
-    echo 'код неверный';
+    echo 'Error';
     exit;
 } else {
 
@@ -45,11 +45,11 @@ if ($postCaptcha != $captcha) {
 </html>';
     $mail -> AltBody = 'Alternative text';
 
-    if(!$mail->send()) {
-        'div class="success">Не отправлено</div>';
+    if(!$mail->send()) {;
         echo 'Error code: ' . $mail -> ErrorInfo;
     } else {
-        include ('success.php');
+      echo 'Send mail!';
+      include('success.php')  ;
     }
 }
 ?>

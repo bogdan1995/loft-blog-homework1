@@ -57,20 +57,33 @@
             $.ajax({
                 url: 'php/send_mail.php',
                 type: 'POST',
-                data: str
-            })
-                .done(function (ans) {
-                    var mes = ans.mes,
-                        status = ans.status;
+                data: str,
+                success : function (result) {
 
-
-                    if (status === "OK") {
-                        var result = '<div class="comeClass" >Ваше сообщение успешно отправлено </div>'
-                        form.html(result);
+                    var answer = result.slice(-5, result.length);
+                    if (answer === 'Error') {
+                        $('#captcha').qtip({
+                            content: {
+                                text: 'неверный код'
+                            },
+                            position: {
+                                my: 'left center',
+                                at: 'right center',
+                                viewport: $(window)
+                            },
+                            style: {
+                                classes: ' qtip-red tooltip'
+                            }
+                        })
+                        .addClass('error');
                     } else {
-                        form.html(msg);
+                        $('form').remove()
+                        $('<div/>').addClass('success').text('Ваше сообщение успешно отослано').prependTo($('form-content'));
                     }
-                });
+                }
+            })
+
+
         },
 
         submitForm: function (form) {
