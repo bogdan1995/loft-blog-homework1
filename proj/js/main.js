@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     app = {
 
         initializate: function () {
@@ -104,7 +104,7 @@
                     if (elem.attr('id') === 'captcha') {
                         error = error.substring(7, error.length)
                     }
-                    if ((elem).not('input[type="file"], input[type="reset]')) {
+                    if ((elem).not('input[type="file"], input[type="reset"]')) {
                         elem.qtip({
                             content: {
                                 text: error
