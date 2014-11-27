@@ -49,7 +49,6 @@ if ($postCaptcha != $captcha) {
         echo 'Error code: ' . $mail -> ErrorInfo;
     } else {
       echo 'Send mail!';
-      include('success.php')  ;
     }
 }
 ?>
