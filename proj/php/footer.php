@@ -8,6 +8,6 @@
 <script src="js/vendor/imagesloaded.pkg.min.js"></script>
 <script src="js/vendor/placeholder.js"></script>
 <script src="js/vendor/pie.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

@@ -752,19 +752,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-border-radius: 4px;
   border-radius: 4px;
   float: left;
-  background: url(../img/captcha.png) no-repeat #FBFCFD 50% 50%;
 }
-/* line 118, ../sass/layouts/_form.scss */
+/* line 117, ../sass/layouts/_form.scss */
 .form-group.captcha .innerblock input[type="text"] {
   float: right;
   margin-top: 27px;
 }
-/* line 126, ../sass/layouts/_form.scss */
+/* line 125, ../sass/layouts/_form.scss */
 .form-group.buttons {
   display: block;
   overflow: hidden;
 }
-/* line 130, ../sass/layouts/_form.scss */
+/* line 129, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="submit"] {
   float: left;
   border: none;
@@ -779,7 +778,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 3px;
   cursor: pointer;
 }
-/* line 144, ../sass/layouts/_form.scss */
+/* line 143, ../sass/layouts/_form.scss */
 .form-group.buttons input[type="reset"] {
   float: right;
   border: none;
@@ -794,7 +793,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
 }
 
-/* line 160, ../sass/layouts/_form.scss */
+/* line 159, ../sass/layouts/_form.scss */
 .success {
   padding: 15px 0;
   max-width: 100%;
@@ -807,7 +806,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 4px;
 }
 
-/* line 172, ../sass/layouts/_form.scss */
+/* line 171, ../sass/layouts/_form.scss */
 .for-captcha {
   text-align: center;
 }

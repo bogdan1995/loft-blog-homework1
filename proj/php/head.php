@@ -12,9 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Пономаренко Богдан | Frontend Developer</title>
     <meta name="description" content="">
-    <link href="css/style.css" media="screen" rel="stylesheet">
-    <link href="css/animate.css" media="screen" rel="stylesheet">
-    <link href="css/jquery.qtip.min.css" media="screen" rel="stylesheet">
+    <link href="css/style.min.css" media="screen" rel="stylesheet">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
