@@ -1069,14 +1069,13 @@ body {
   padding: 0;
   border: none;
   opacity: 0;
-  filter: alpha(opacity=0);
   position: absolute;
   top: 0;
   left: 0;
   height: 40px;
   cursor: pointer;
 }
-/* line 127, ../sass/layouts/_popup.scss */
+/* line 126, ../sass/layouts/_popup.scss */
 .popup-content .form-group input[type="submit"] {
   border: none;
   color: #F6F6F6;
@@ -1124,7 +1123,7 @@ body {
 }
 /* line 9, ../sass/style.scss */
 * {
-  behavior: url(pie/PIE.htc);
+  behavior: url(js/vendor/PIE.htc);
 }
 
 /* line 13, ../sass/style.scss */

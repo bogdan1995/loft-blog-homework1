@@ -118,3 +118,12 @@
     z-index: 99;
   }
 }
+
+input[type="file"] {
+  filter: alpha(opacity=0);
+  z-index: 0;
+}
+
+.upload-button {
+  z-index: 99999;
+}

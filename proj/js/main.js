@@ -5,6 +5,7 @@
         initializate: function () {
             this.setUpListeners();
             this.placeholders();
+            this.progesIE();
         },
 
         // Initialization placeholders for ie8
@@ -150,6 +151,14 @@
                     classes: ' qtip-red tooltip'
                 }
             })
+        },
+
+        progesIE : function () {
+            if (window.PIE) {
+                $('*').each(function() {
+                    PIE.attach(this);
+                });
+            }
         }
 
 
