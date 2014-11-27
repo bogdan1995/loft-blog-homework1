@@ -2,7 +2,7 @@
   background: url(../img/popup.png);
 }
 
-.header:before {
+.header:before, .footer:before {
     background: url(../img/gradient.png) center;
     max-width: 100%;
 }
@@ -53,7 +53,7 @@
   background: url(../img/hover.png);
 }
 
-.education-items:first-child:before {
+.content-items:first-child:before {
   position: absolute;
   top: 0;
   left: -68px;
@@ -63,7 +63,7 @@
   height: 23px;
 }
 
-.education-items:first-child+*:before {
+.content-items:first-child+*:before {
   position: absolute;
   top: 0;
   left: -60px;
@@ -89,6 +89,7 @@
   background-color: #3BA8C0;
   margin-right: 8px;
   overflow: hidden;
+  border-radius: 3px;
 
   &#html,
   &#css,

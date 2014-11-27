@@ -34,9 +34,11 @@
 	border: 7px solid #30a6bd;
 	width: 201px;
 	height: 200px;
+    behavior: url(/pie/PIE.htc);
 	img {
 		max-width: 100%;
 		border-radius: 50%;
+      behavior: url(/pie/PIE.htc);
 	}
 }
 	.about {
@@ -153,7 +155,7 @@
   padding-right: 30px;
   &:before {
     position: absolute;
-    background: url(../img/sprites.png)
+    background: url(../img/sprites.png);
   }
   &:nth-child(1):before {
 

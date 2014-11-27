@@ -439,85 +439,87 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 7px solid #30a6bd;
   width: 201px;
   height: 200px;
+  behavior: url(/pie/PIE.htc);
 }
-/* line 37, ../sass/layouts/_right-column.scss */
+/* line 38, ../sass/layouts/_right-column.scss */
 .avatar img {
   max-width: 100%;
   border-radius: 50%;
+  behavior: url(/pie/PIE.htc);
 }
 
-/* line 42, ../sass/layouts/_right-column.scss */
+/* line 44, ../sass/layouts/_right-column.scss */
 .about {
   overflow: hidden;
   margin-top: 7px;
 }
 
-/* line 46, ../sass/layouts/_right-column.scss */
+/* line 48, ../sass/layouts/_right-column.scss */
 .about-items {
   margin-bottom: 28px;
   color: #37424D;
   font-size: 15px;
   font-weight: 300;
 }
-/* line 51, ../sass/layouts/_right-column.scss */
+/* line 53, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(2) {
   color: #5A636B;
 }
-/* line 54, ../sass/layouts/_right-column.scss */
+/* line 56, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(3), .about-items:nth-child(4) {
   color: #4A545D;
 }
-/* line 57, ../sass/layouts/_right-column.scss */
+/* line 59, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) strong {
   float: left;
   display: block;
   color: #5A636B;
 }
-/* line 63, ../sass/layouts/_right-column.scss */
+/* line 65, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) .skills {
   display: block;
   overflow: hidden;
   padding-left: 7px;
 }
-/* line 68, ../sass/layouts/_right-column.scss */
+/* line 70, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) .skills li {
   display: inline-block;
   border-radius: 3px;
   overflow: hidden;
   z-index: 999;
 }
-/* line 74, ../sass/layouts/_right-column.scss */
+/* line 76, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li {
   background-color: #3BA8C0;
   margin-right: 8px;
   overflow: hidden;
   background: linear-gradient(#3ba8c0 0%, #3ba8c0 50%, #2e8ca2 51%, #2e8ca2 100%);
 }
-/* line 80, ../sass/layouts/_right-column.scss */
+/* line 82, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li#html, .about-items:nth-child(5) li#css, .about-items:nth-child(5) li#js {
   margin-bottom: 5px;
 }
-/* line 84, ../sass/layouts/_right-column.scss */
+/* line 86, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li#gulp {
   padding: 2px 8px;
 }
-/* line 87, ../sass/layouts/_right-column.scss */
+/* line 89, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li#html {
   padding: 2px 7px;
 }
-/* line 90, ../sass/layouts/_right-column.scss */
+/* line 92, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li#css {
   padding: 2px 11px;
 }
-/* line 93, ../sass/layouts/_right-column.scss */
+/* line 95, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li#js {
   padding: 2px 11px;
 }
-/* line 96, ../sass/layouts/_right-column.scss */
+/* line 98, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li#git {
   padding: 2px 12px 2px 13px;
 }
-/* line 99, ../sass/layouts/_right-column.scss */
+/* line 101, ../sass/layouts/_right-column.scss */
 .about-items:nth-child(5) li span {
   font-family: proxima_nova_condensedSBd;
   font-size: 14px;
@@ -526,7 +528,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   z-index: 99;
 }
-/* line 110, ../sass/layouts/_right-column.scss */
+/* line 112, ../sass/layouts/_right-column.scss */
 .about-items strong {
   color: #4A545D;
   font-size: 16px;
@@ -534,16 +536,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: fira_sansmedium;
 }
 
-/* line 119, ../sass/layouts/_right-column.scss */
+/* line 121, ../sass/layouts/_right-column.scss */
 .content-list {
   padding: 14px 0 34px 130px;
 }
-/* line 121, ../sass/layouts/_right-column.scss */
+/* line 123, ../sass/layouts/_right-column.scss */
 .content-list .content-items {
   margin-bottom: 31px;
   position: relative;
 }
-/* line 125, ../sass/layouts/_right-column.scss */
+/* line 127, ../sass/layouts/_right-column.scss */
 .content-list .content-items.job:before {
   position: absolute;
   top: 0;
@@ -553,16 +555,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 32px;
   height: 30px;
 }
-/* line 134, ../sass/layouts/_right-column.scss */
+/* line 136, ../sass/layouts/_right-column.scss */
 .content-list .content-items.job p {
   color: #5A636B;
 }
-/* line 137, ../sass/layouts/_right-column.scss */
+/* line 139, ../sass/layouts/_right-column.scss */
 .content-list .content-items.job:last-child {
   margin-bottom: 0;
 }
 
-/* line 144, ../sass/layouts/_right-column.scss */
+/* line 146, ../sass/layouts/_right-column.scss */
 .content-inner {
   color: #5A636B;
   font-size: 15px;
@@ -571,16 +573,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: fira_sanslight;
 }
 
-/* line 152, ../sass/layouts/_right-column.scss */
+/* line 154, ../sass/layouts/_right-column.scss */
 .content-items {
   padding-right: 30px;
 }
-/* line 154, ../sass/layouts/_right-column.scss */
+/* line 156, ../sass/layouts/_right-column.scss */
 .content-items:before {
   position: absolute;
   background: url(../img/sprites.png);
 }
-/* line 158, ../sass/layouts/_right-column.scss */
+/* line 160, ../sass/layouts/_right-column.scss */
 .content-items:nth-child(1):before {
   top: 0;
   left: -68px;
@@ -589,7 +591,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 41px;
   height: 23px;
 }
-/* line 167, ../sass/layouts/_right-column.scss */
+/* line 169, ../sass/layouts/_right-column.scss */
 .content-items:nth-child(2):before {
   top: 0;
   left: -60px;
@@ -598,21 +600,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 26px;
   height: 32px;
 }
-/* line 175, ../sass/layouts/_right-column.scss */
+/* line 177, ../sass/layouts/_right-column.scss */
 .content-items p {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 7px;
 }
-/* line 180, ../sass/layouts/_right-column.scss */
+/* line 182, ../sass/layouts/_right-column.scss */
 .content-items p a {
   color: #4A545D;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-/* line 185, ../sass/layouts/_right-column.scss */
+/* line 187, ../sass/layouts/_right-column.scss */
 .content-items p a:hover {
   text-decoration: underline;
 }
@@ -1067,13 +1069,14 @@ body {
   padding: 0;
   border: none;
   opacity: 0;
+  filter: alpha(opacity=0);
   position: absolute;
   top: 0;
   left: 0;
   height: 40px;
   cursor: pointer;
 }
-/* line 126, ../sass/layouts/_popup.scss */
+/* line 127, ../sass/layouts/_popup.scss */
 .popup-content .form-group input[type="submit"] {
   border: none;
   color: #F6F6F6;
@@ -1120,29 +1123,34 @@ body {
   }
 }
 /* line 9, ../sass/style.scss */
+* {
+  behavior: url(pie/PIE.htc);
+}
+
+/* line 13, ../sass/style.scss */
 html {
   height: 100%;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 body {
   min-height: 100%;
   position: relative;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 body {
   background: url(../img/background.png);
   font-family: fira_sansbook, 'Arial';
 }
 
-/* line 23, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .wrapper {
   width: 100%;
   height: 100%;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .clearfix:before, .work:before,
 .clearfix:after,
 .work:after {
@@ -1150,12 +1158,12 @@ body {
   display: table;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .clearfix:after, .work:after {
   clear: both;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .clearfix, .work {
   zoom: 1;
   /* ╨е╨░╨║ ╨┤╨╗╤П IE 6 ╨╕ 7 */

@@ -8,5 +8,15 @@
 <script src="js/vendor/imagesloaded.pkg.min.js"></script>
 <script src="js/vendor/placeholder.js"></script>
 <script src="js/main.js"></script>
+<script src="pie/pie.js"></script>
+<script>
+    $(function() {
+        if (window.PIE) {
+            $('*').each(function() {
+                PIE.attach(this);
+            });
+        }
+    });
+</script>
 </body>
 </html>

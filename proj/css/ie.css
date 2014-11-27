@@ -4,7 +4,7 @@
 }
 
 /* line 5, ../sass/ie.scss */
-.header:before {
+.header:before, .footer:before {
   background: url(../img/gradient.png) center;
   max-width: 100%;
 }
@@ -65,7 +65,7 @@
 }
 
 /* line 56, ../sass/ie.scss */
-.education-items:first-child:before {
+.content-items:first-child:before {
   position: absolute;
   top: 0;
   left: -68px;
@@ -76,7 +76,7 @@
 }
 
 /* line 66, ../sass/ie.scss */
-.education-items:first-child + *:before {
+.content-items:first-child + *:before {
   position: absolute;
   top: 0;
   left: -60px;
@@ -105,32 +105,33 @@
   background-color: #3BA8C0;
   margin-right: 8px;
   overflow: hidden;
+  border-radius: 3px;
 }
-/* line 93, ../sass/ie.scss */
+/* line 94, ../sass/ie.scss */
 .about-items li#html, .about-items li#css, .about-items li#js {
   margin-bottom: 5px;
 }
-/* line 97, ../sass/ie.scss */
+/* line 98, ../sass/ie.scss */
 .about-items li#gulp {
   padding: 2px 8px;
 }
-/* line 100, ../sass/ie.scss */
+/* line 101, ../sass/ie.scss */
 .about-items li#html {
   padding: 2px 7px;
 }
-/* line 103, ../sass/ie.scss */
+/* line 104, ../sass/ie.scss */
 .about-items li#css {
   padding: 2px 11px;
 }
-/* line 106, ../sass/ie.scss */
+/* line 107, ../sass/ie.scss */
 .about-items li#js {
   padding: 2px 11px;
 }
-/* line 109, ../sass/ie.scss */
+/* line 110, ../sass/ie.scss */
 .about-items li#git {
   padding: 2px 12px 2px 13px;
 }
-/* line 112, ../sass/ie.scss */
+/* line 113, ../sass/ie.scss */
 .about-items li span {
   font-family: proxima_nova_condensedSBd;
   font-size: 14px;

@@ -6,6 +6,10 @@
 @import "layouts/tooltip";
 @import "layouts/queries";
 
+* {
+  behavior: url(pie/PIE.htc);
+}
+
 html {
   height: 100%;
 }
