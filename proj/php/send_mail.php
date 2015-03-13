@@ -16,13 +16,13 @@ if ($postCaptcha != $captcha) {
     $mail = new PHPMailer;
 
     $mail -> isSMTP();
-    $mail -> Host = 'smtp.yandex.ru';
+    $mail -> Host = 'smtp.timeweb.ru';
     $mail -> SMTPAuth = true;
-    $mail -> Username = 'ponomarenko.bogdan@yandex.ru';
+    $mail -> Username = 'support@ponomarenko-bogdan.ru';
     $mail -> Password = 'bogdan1995';
     $mail->SMTPSecure = 'ssl';
     $mail -> Port = 465;
-    $mail -> From = 'ponomarenko.bogdan@yandex.ru';
+    $mail -> From = 'support@ponomarenko-bogdan.ru';
 
     $mail -> FromName = stripslashes($_POST['name']);
     $mail -> addAddress('ponomarenko.bogdan@yandex.ru', 'Богдан Пономаренко');
